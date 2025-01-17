@@ -69,12 +69,12 @@ export default function ServicesPage() {
               <div className="cards-container">
                 <Card
                     title="Consultation"
-                    image="image10.webp"
+                   
                     description="We begin with an in-depth consultation to understand your vision, preferences, and requirements."
                 />
                 <Card
                     title="Concept Development"
-                    image="image11.webp"
+                    
                     description="Our designers create initial concepts and present them for your feedback and approval."
                 />
                 <Card
