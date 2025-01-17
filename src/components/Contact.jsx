@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   return (
     <div className="contact-page">
-    <h1>Contact</h1>
+    <div className="heading">Contact</div>
       <div className="contact-options">
         <div className="contact-card">
           <img
@@ -17,7 +17,7 @@ const ContactUs = () => {
             alt="Sales Icon"
             className="icon"
           />
-          <h2>Talk to our Sales team</h2>
+          <h2>Book Your Appointment</h2>
           <p>We are here to help you find the right products to build your dream house.</p>
           <button className="btn" onClick={openModal}>
             Contact Sales
@@ -29,7 +29,7 @@ const ContactUs = () => {
             alt="Vendor Icon"
             className="icon"
           />
-          <h2>Register as a Vendor</h2>
+          <h2>Contact Our Interior Designing Team </h2>
           <p>Becoming a vendor with us will lead your business to the next level of sales.</p>
           <button className="btn" onClick={openModal}>
             Register Now

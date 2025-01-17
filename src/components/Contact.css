@@ -1,7 +1,7 @@
 /* ContactUs.css */
 
 .contact-page {
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
   }
@@ -15,8 +15,8 @@
   }
   
   .contact-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: #fff0d5;
+    border: 1px solid #f6f5f5;
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -41,7 +41,7 @@
   }
   
   .btn {
-    background: #007bff;
+    background: #65a0df;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -116,7 +116,8 @@
   }
   
 
-  h1{
-    
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  .heading{
+    background-color:red;
+    font-family:  Helvetica;
+    font-size: 55px;
+    }
