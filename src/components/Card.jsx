@@ -12,3 +12,4 @@ export default function Card({ title, image, description }) {
     </div>
   );
 }
+
