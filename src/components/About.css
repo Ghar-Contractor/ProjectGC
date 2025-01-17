@@ -39,7 +39,7 @@ body {
     }
   /* Typography */
   h1, h2, h3 {
-    color: #1e40af;
+    color: #1e40af; 
     margin-bottom: 20px;
   }
   
@@ -224,13 +224,13 @@ body {
   }
   
   .footer-section a {
-    color: #93c5fd;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .footer-section a:hover {
-    color: white;
+    color: #0a3374;
   }
   
   .footer-bottom {

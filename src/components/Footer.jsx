@@ -11,9 +11,10 @@ const Footer = () => {
       <div>
         <style>
           {`
+
          .footer-container 
            {
-             background-color: #0d1d32;
+             background-color: #71797E;
              //background-color: #F8F8F8;
              color:  #fff;
              //color: #0d1d32;
@@ -59,7 +60,7 @@ const Footer = () => {
   
            .footer-link:hover 
            {
-             color:rgb(94, 214, 235);
+             color:#fff;
              text-decoration: underline;
            }
   
