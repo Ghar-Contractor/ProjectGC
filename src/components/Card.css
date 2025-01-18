@@ -1,6 +1,7 @@
-body{
-  font-family: Arial, sans-serif;
-  }
+body {
+  font-family: "Arial", sans-serif;
+}
+
   
 .card {
   border: 1px solid #daf3f9;
@@ -12,6 +13,7 @@ body{
   transition: transform 0.2s, background-color 0.2s;
   background:white;
   font-family:"Arial sans-serif";
+  
   flex: 1 1 200px;
   
 }
@@ -135,5 +137,10 @@ section{
     color: #00509e; /* Slightly brighter blue on hover */
     border-bottom-color: #00509e; /* Change underline color on hover */
   }
+
+  h1, h2,h3, p {
+    font-family: "Arial", sans-serif;
+  }
+  
   
 
