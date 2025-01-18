@@ -1,0 +1,136 @@
+/* FeaturedProjects.css */
+
+.featured-projects-container {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f4f4f9;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .projects {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .project-title {
+    font-size: 1.6rem;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .testimonials, .completed-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .testimonial-card, .completed-project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .testimonial-card:hover, .completed-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+  }
+  
+  .testimonial-project {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .completed-project-image {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 15px;
+  }
+  
+  .completed-project-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .completed-project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .completed-project-date {
+    font-size: 0.9rem;
+    color: #888;
+  }
