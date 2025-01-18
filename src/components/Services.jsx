@@ -61,7 +61,7 @@ export default function ServicesPage() {
                 </div>
             </section>
             <section id="methodology">
-              <h2 className="methodology-heading">Our Methodology</h2>
+              <h3 className="methodology-heading">Our Methodology</h3>
 
                 
               <div className="cards-container">
@@ -120,7 +120,7 @@ export default function ServicesPage() {
 
 <section id="tools-and-technologies">
   <div className="cards-container">
-    <h2 className="tools-heading">Tools and Technologies</h2>
+    <h3 className="tools-heading">Tools and Technologies</h3>
     <Card
       title="Construction Tools"
       image="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg"
@@ -143,7 +143,7 @@ export default function ServicesPage() {
   </div>
 </section>
 <section id="methodology">
-  <h2 className="methodology-heading">Our Methodology</h2>
+  <h3 className="methodology-heading">Our Methodology</h3>
 
   <div className="cards-container">
     <Card
