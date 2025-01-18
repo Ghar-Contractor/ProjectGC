@@ -1,6 +1,8 @@
 /* ContactUs.css */
 
-
+body{
+  font-family: Arial, sans-serif;
+  }
 
 .contact-page {
   font-family: Arial, Helvetica, sans-serif;

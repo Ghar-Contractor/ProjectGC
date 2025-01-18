@@ -38,15 +38,15 @@ export default function About() {
           <h3 className='tageline3'>Quality Craftsmanship, Uncompromising Standards.</h3>
           <div className="values">
             <div className="value-card">
-              <h3>Innovation</h3>
+              <h3 className="typo">Innovation</h3>
               <p>Constantly pushing boundaries and embracing new technologies.</p>
             </div>
             <div className="value-card">
-              <h3>Integrity</h3>
+              <h3 className="typo">Integrity</h3>
               <p>Upholding the highest standards of honesty and ethical conduct.</p>
             </div>
             <div className="value-card">
-              <h3>Collaboration</h3>
+              <h3 className="typo">Collaboration</h3>
               <p>Fostering teamwork and partnerships for mutual success.</p>
             </div>
           </div>
@@ -58,58 +58,31 @@ export default function About() {
           <div className="team">
             <div className="team-member">
               <img src={person1} alt="Team Member 1" />
-              <h3>Aarya Falle</h3>
+              <h3 className="typo">Aarya Falle</h3>
               <p>Position</p>
             </div>
             <div className="team-member">
               <img src={person2} alt="Team Member 2" />
-              <h3>Akash Mishra</h3>
+              <h3 className="typo">Akash Mishra</h3>
               <p>Position</p>
             </div>
             <div className="team-member">
               <img src={person1} alt="Team Member 3" />
-              <h3>Kishan Tiwari</h3>
+              <h3 className="typo">Kishan Tiwari</h3>
               <p>Position</p>
             </div>
             <div className="team-member">
               <img src={person2} alt="Team Member 4" />
-              <h3>Akash Mishra</h3>
+              <h3 className="typo">Akash Mishra</h3>
               <p>Position</p>
             </div>
           </div>
         </div>
 
         <div className="cta-section">
-          <h2>Ready to Get Started?</h2>
-          <p>Join us on this exciting journey of growth and innovation.</p>
+          <h2 className="typo">Ready to Get Started?</h2>
+          <p >Join us on this exciting journey of growth and innovation.</p>
           <a href="#" className="cta-button">Contact Us</a>
-        </div>
-      </div>
-
-      <div className="footer" style={{backgroundColor: '#1e40af'}}>
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>About Us</h3>
-            <p>We are committed to delivering excellence and driving innovation in everything we do.</p>
-          </div>
-          <div className="footer-section">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h3>Contact Us</h3>
-            <p>123 Business Street, City, Country</p>
-            <p>contact@example.com</p>
-            <p>+1 (123) 456-7890</p>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>&copy; 2023 Your Company Name. All rights reserved.</p>
         </div>
       </div>
     </div>
