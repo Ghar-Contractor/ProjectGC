@@ -1,5 +1,5 @@
 .card {
-  border: 1px solid #3b82f6;
+  border: 1px solid #daf3f9;
   border-radius: 12px;
   overflow: hidden;
   width: 300px;
@@ -40,7 +40,7 @@
 }
 
 #methodology{
-  background-color: #3b82f6;
+  background-color: #daf3f9;
   padding: 15px; 
   display: flex; 
   flex-wrap: wrap; 
@@ -54,7 +54,7 @@
   margin-bottom: 20px; /* Add space between heading and content */}
 
 #tools-and-technologies{
-  background-color: #3b82f6;
+  background-color: #daf3f9;
   padding: 15px; 
 
   display: flex; 
