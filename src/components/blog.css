@@ -90,11 +90,11 @@ body {
   .blog-post p {
     transition: max-height 0.3s ease-out;
     overflow: hidden;
-    max-height: 100px;  /* Default height */
+    max-height: 100px;  
   }
   
   .blog-post p.expanded {
-    max-height: 500px;  /* Height when expanded */
+    max-height: 500px;  
   }
   .read-more-btn {
     background-color: transparent;
