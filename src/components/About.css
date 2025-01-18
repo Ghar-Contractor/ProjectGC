@@ -262,9 +262,8 @@ body {
     border-top: 1px solid #3b82f6;
     color: white;
   }
-   */
-  /* Responsive design */
-  @media (max-width: 768px) {
+   
+  /* /* @media (max-width: 768px) {
     .mission {
       flex-direction: column;
     }
@@ -285,4 +284,4 @@ body {
     .team-member h3 {
       font-size: 1.3rem;
     }
-  }
+  }  */
