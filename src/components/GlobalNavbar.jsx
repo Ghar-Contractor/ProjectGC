@@ -11,14 +11,14 @@ export default function Navbar() {
           justify-content: space-between;
           align-items: center;
           padding: 10px 20px;
-          background-color: black; /* Black background */
+          background-color:  #F8F8F8; /* background */
           position: sticky;
           top: 0;
           z-index: 1000; 
         }
 
         .navbar .logo a {
-          color: white; /* White font color for logo */
+          color: red; /* White font color for logo */
           text-decoration: none;
           font-size: 24px;
           font-weight: bold;
@@ -31,7 +31,7 @@ export default function Navbar() {
         }
 
         .nav-links li a {
-          color: white; /* White font color for links */
+          color: gray; /* White font color for links */
           text-decoration: none;
           font-size: 18px;
           transition: color 0.3s ease;

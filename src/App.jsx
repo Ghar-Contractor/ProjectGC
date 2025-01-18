@@ -9,6 +9,10 @@ import Portfolio from './components/Portfolio';
 import FAQ from './components/FAQ';
 import Services from './components/Services';
 
+import "./App.css"
+import Footer from './components/Footer';
+
+
 
 function App() {
   return (
@@ -23,6 +27,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
