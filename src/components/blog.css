@@ -1,0 +1,118 @@
+
+body {
+    font-family: 'Aerial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #daf3f9;
+    color: #333;
+  }
+  
+  
+  header {
+    background: linear-gradient(90deg, #7c9eff, #7df9a3);
+    color: #0d0d0d;
+    height: 120px;
+    font-size: larger;
+    padding: 1rem 0;
+    line-height: 100px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-category {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  
+  .blog-category h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #736a6a;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  
+  .blog-post {
+    background: #a7cff5;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(201, 169, 255, 0.4);
+    background-color:  #9ee8b9;
+    color: #373737;
+  }
+  
+  
+  .blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  
+  .blog-post h3 {
+    margin: 0;
+    color: #000000;
+    font-size: 1.5rem;
+  }
+  
+  .blog-post small {
+    display: block;
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  
+  .blog-post p {
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 100px;  /* Default height */
+  }
+  
+  .blog-post p.expanded {
+    max-height: 500px;  /* Height when expanded */
+  }
+  .read-more-btn {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #0a0b0b;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    outline: none;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+  

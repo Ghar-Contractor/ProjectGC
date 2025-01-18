@@ -8,7 +8,7 @@ export default function About() {
     <div className="page-wrapper">
       <div className="main-content">
         <div>
-          <h1 className="page-title">About Us</h1>
+          <h1 className="typo">About Us</h1>
           <h2 className='tageline1'>From Vision to Reality: A Journey of Excellence</h2>
           <p className="subtitle">
             We are a team of passionate individuals dedicated to delivering exceptional solutions and driving innovation in our industry.

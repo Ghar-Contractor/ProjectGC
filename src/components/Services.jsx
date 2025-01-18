@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-
+import "./Services.css"
 export default function ServicesPage() {
   return (
 

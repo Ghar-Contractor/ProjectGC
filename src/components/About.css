@@ -18,28 +18,36 @@ body {
     padding: 20px;
   }
   .tageline1{
+    color: #1e40af;
     text-align: center;
     margin-bottom: 20px;
   }
     .tageline2{
+      color: #1e40af;
         text-align: center;
         margin-bottom: 20px;
         margin-top: 10px;
     }
 
     .tageline3{
+      color: #1e40af;
         text-align: center;
         margin-bottom: 0;
     }
 
     .tageline4{
+      color: #1e40af;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
     }
   /* Typography */
+
   h1, h2, h3 {
     color: #1e40af; 
+  }
+  .typo {
+    color: #1e40af;
     margin-bottom: 20px;
   }
   
@@ -50,6 +58,7 @@ body {
   }
   
   .section-title {
+    color: #1e40af;
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
