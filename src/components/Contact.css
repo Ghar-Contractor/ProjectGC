@@ -1,12 +1,14 @@
 /* ContactUs.css */
 
-
+body{
+  font-family: Arial, sans-serif;
+  }
 
 .contact-page {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 20px;
-  background: #f9f9f9; /* Light background for better contrast */
+  background:linear-gradient(to left ,rgb(229, 236, 253) ,rgb(162, 203, 237),rgb(168, 201, 248),#b4e1ed,rgb(241, 236, 255)); /* Light background for better contrast */
   color: #333;
 }
 
@@ -19,19 +21,19 @@
 }
 
 .contact-card {
-  background: linear-gradient(135deg, #fff9e6, #ffe7c0);
-  border: 1px solid #e5e5e5;
+  background: white;
+  border: 1px solid #ffffff;
   border-radius: 12px;
-  padding: 20px;
+  padding: 50px;
   width: 300px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 30 12px 18px 18px 12px rgba(0, 0, 0, 0.1);
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(5px);
+  box-shadow: 0 34px 38px rgba(0, 0, 0, 0.2);
 }
 
 .contact-card .icon {
@@ -160,31 +162,29 @@
   }
 }
 
-.heading {
-  font-family: 'Poppins', Helvetica, sans-serif; /* Clean and modern font */
-  font-size: 55px;
-  
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  margin-bottom: 30px;
-  letter-spacing: 2px; /* Spaced-out letters for elegance */
-  text-transform: uppercase; /* Makes the text bold and impactful */
-  animation: textGlow 2s infinite alternate; /* A glowing text animation */
-  text-align :left;
-}
 
-/* Animation for glowing text */
-@keyframes textGlow {
-  from {
-      color: #ff4d4d;
-      text-shadow: 2px 2px 8px rgba(255, 77, 77, 0.7);
-  }
-  to {
-      color: #ff9052;
-      text-shadow: 2px 2px 12px rgba(255, 144, 82, 0.9);
-  }
+
+.heading{   
+   margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+    margin-top: 20px;
+    font-family: "Arial sans-serif";
+     color:rgb(0, 77, 112);
+     font-size: 45px;
+     padding-right: 0%;
+
 }
 
 
-.google-maps{
+.google-maps1{
   padding:20px;
+  display: inline-block;
+}
+
+.google-maps2{
+  padding:20px;display: inline-block;
+}
+.google-maps3{
+  padding:20px;display: inline-block;
 }
