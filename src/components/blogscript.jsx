@@ -1,7 +1,6 @@
-// blogscript.jsx
 import { useEffect } from 'react';
 
-export default function blogscript() {
+export default function BlogScript() {
   useEffect(() => {
     const handleReadMore = (event) => {
       const blogPost = event.target.closest('.blog-post');
