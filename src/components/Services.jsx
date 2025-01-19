@@ -8,8 +8,8 @@ export default function ServicesPage() {
 
 
     <div className="services-page">
-      <h1>Our Services</h1>
-      <h2>Interior designs</h2>
+      <h1 className='Head1'>Our Services</h1>
+      <h2 className='Head2'>Interior designs</h2>
 
       <div className="cards-container">
          <Card title="Residential Interior Design" 
@@ -87,7 +87,7 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            <h2>Construction</h2>
+            <h2 className='Head2'>Construction</h2>
 
 <div className="cards-container">
   <Card
