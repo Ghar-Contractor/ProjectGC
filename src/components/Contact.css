@@ -2,7 +2,13 @@
 
 body{
   font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #333;
   }
+  
+  
 
 .contact-page {
   font-family: Arial, Helvetica, sans-serif;
@@ -62,7 +68,7 @@ body{
   padding: 12px 24px;
   cursor: pointer;
   font-size: 16px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
@@ -115,8 +121,25 @@ body{
   color: #555;
 }
 
+ .location{
+  display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+}
+
+.location-select{
+  display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+
+} 
+
 .contact-form input, 
-.contact-form textarea {
+.contact-form textarea{
   width: 100%;
   margin-bottom: 15px;
   padding: 12px;
@@ -143,7 +166,7 @@ body{
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition:  0.3s ease;
 }
 
 .contact-form button:hover {
@@ -161,6 +184,7 @@ body{
       width: 90%;
   }
 }
+
 
 
 
@@ -187,4 +211,31 @@ body{
 }
 .google-maps3{
   padding:20px;display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .google-maps1 {
+      flex-direction: column;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 5%
+  }
+  .google-maps2 {
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5%
+}
+
+.google-maps3 {
+  flex-direction: column;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 5%
+}
+ 
 }
