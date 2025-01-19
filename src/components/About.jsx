@@ -10,7 +10,7 @@ export default function About() {
         <div>
           <h1 className="typo">About Us</h1>
           <h2 className='tageline1'>From Vision to Reality: A Journey of Excellence</h2>
-          <p className="subtitle">
+          <p className="subtitlex">
             We are a team of passionate individuals dedicated to delivering exceptional solutions and driving innovation in our industry.
           </p>
         </div>
