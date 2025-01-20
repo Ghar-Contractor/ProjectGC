@@ -185,6 +185,14 @@ body{
   }
 }
 
+.icon{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+  object-fit: cover;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
+}
 
 
 

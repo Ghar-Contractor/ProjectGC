@@ -16,9 +16,10 @@ const ContactUs = () => {
       <div className="contact-options">
         <div className="contact-card">
           <img
-            src=""
+            src="src/assets/images/salesicon.jpeg"
             alt="Sales Icon"
             className="icon"
+            
           />
           <h2>Book Your Appointment</h2>
 
@@ -28,7 +29,7 @@ const ContactUs = () => {
         </div>
         <div className="contact-card">
           <img
-            src="https://via.placeholder.com/100"
+            src="src/assets/images/teamicon.jpeg"
             alt="Vendor Icon"
             className="icon"
           />
@@ -51,14 +52,17 @@ const ContactUs = () => {
               <input type="text" placeholder="Full Name" required />
               <input type="email" placeholder="Email ID" required />
               <input type="tel" placeholder="Phone number" required />
+                
+                <div className='input-box'>
               <label for="location">Choose Location:</label>
 
-<select id="loaction-select">
-  <option value="">--Location --</option>
-  <option value="Noida">Noida</option>
-  <option value="Pune">Pune</option>
-  <option value="Bangalore">Bangalore</option>
+            <select id="location-select">
+             <option >--Location --</option>
+             <option value="Noida">Noida</option>  
+              <option value="Pune">Pune</option>
+           <option value="Bangalore">Bangalore</option>
 </select>
+</div>
 <div className="input-box">
           <label>Your Message</label>
           <textarea name="" id="" placeholder="Enter your message" required></textarea>
