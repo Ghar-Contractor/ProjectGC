@@ -14,7 +14,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding: 20px;
-  background:linear-gradient(to left ,rgb(229, 236, 253) ,rgb(162, 203, 237),rgb(168, 201, 248),#b4e1ed,rgb(241, 236, 255)); /* Light background for better contrast */
+  background:linear-gradient(to left ,rgb(233, 211, 255) ,rgb(162, 203, 237),rgb(203, 223, 251),#caf3fe,rgb(241, 236, 255)); /* Light background for better contrast */
   color: #333;
 }
 
@@ -36,6 +36,8 @@ body{
   margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
 
 .contact-card:hover {
   transform: translateY(5px);
@@ -181,7 +183,7 @@ body{
   }
 
   .contact-card {
-      width: 90%;
+      width: 70%;
   }
 }
 
@@ -223,27 +225,9 @@ body{
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .google-maps1 {
-      flex-direction: column;
-      align-items: center;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 5%
-  }
-  .google-maps2 {
-    flex-direction: column;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 5%
-}
-
-.google-maps3 {
-  flex-direction: column;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 5%
-}
+  .google-maps1,.google-maps2,.google-maps3 {
+    width: 70%;
+      
  
+}
 }
