@@ -23,9 +23,9 @@ export default function ServicesPage() {
           description="Stylish, functional business spaces with efficient layouts, brand integration, and sustainability." />
 
 
-         <Card title="Custom Designs" 
-         image="image3.webp"
-          description="Custom room designs transform your home into a personalized sanctuary." />
+         <Card title="Traditional Interior Design" 
+         image="image12.webp"
+          description="Traditional interior design harmonizes classic elegance with rich textures and timeless details." />
 
         <Card title="Custom Designs" 
         image="image4.webp"
