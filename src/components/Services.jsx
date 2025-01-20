@@ -27,9 +27,9 @@ export default function ServicesPage() {
          image="image3.webp"
           description="Custom room designs transform your home into a personalized sanctuary." />
 
-        {/* <Card title="Custom Designs" 
+        <Card title="Custom Designs" 
         image="image4.webp"
-        description="Bespoke designs enhance commercial spaces' function, aesthetics, and brand identity." /> */}
+        description="Bespoke designs enhance commercial spaces' function, aesthetics, and brand identity." />
  
 
 
@@ -105,10 +105,10 @@ export default function ServicesPage() {
     image="https://4.imimg.com/data4/PP/MX/FUSIONI-31203782/prod-image-500x500.jpg"
     description="Assess condition, set goals, ensure compliance, execute modifications, and finalize enhancements."/>
 
-  {/* <Card
+  <Card
     title="Modular Construction"
     image="https://constrofacilitator.com/wp-content/uploads/2021/06/Modular-Prefab-Construction-1.jpg"
-    description="Site prep and module fabrication speed up construction with versatile, cost-effective designs." /> */}
+    description="Site prep and module fabrication speed up construction with versatile, cost-effective designs." />
 
 
 </div>
