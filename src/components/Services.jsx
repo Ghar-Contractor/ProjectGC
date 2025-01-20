@@ -23,9 +23,9 @@ export default function ServicesPage() {
           description="Stylish, functional business spaces with efficient layouts, brand integration, and sustainability." />
 
 
-         <Card title="Custom Designs" 
-         image="image3.webp"
-          description="Custom room designs transform your home into a personalized sanctuary." />
+         <Card title="Traditional Interior Design" 
+         image="image12.webp"
+          description="Traditional interior design harmonizes classic elegance with rich textures and timeless details." />
 
         <Card title="Custom Designs" 
         image="image4.webp"
@@ -54,10 +54,10 @@ export default function ServicesPage() {
                     title="Smart Technology Integration"
                     image="image7.webp"
                     description="Incorporating smart home tech for convenience, security, and energy efficiency."/>
-                <Card
+                {/* <Card
                     title="Project Management Tools"
                     image="image8.webp"
-                    description="Using project management software to streamline communication and track progress."/>
+                    description="Using project management software to streamline communication and track progress."/> */}
                 </div>
             </section>
             <section id="methodology">
@@ -81,9 +81,9 @@ export default function ServicesPage() {
                 <Card
                     title="Execution"
                     description="Coordinates with contractors and suppliers for quality and precision."/>
-                <Card
+                {/* <Card
                     title="Final Touches"
-                    description="Finishing touches ensure every detail is perfect, from lighting to decor."/>
+                    description="Finishing touches ensure every detail is perfect, from lighting to decor."/> */}
                 </div>
             </section>
 
@@ -136,10 +136,10 @@ export default function ServicesPage() {
       image="https://media.istockphoto.com/id/952063596/photo/business-software-concept-ai-artificial-intelligence.jpg?s=612x612&w=0&k=20&c=UNrf6L11psFEsSWLElzd3z6YuFQ6C2x3DPdZTnqYbZc="
       description="BIM, Construction Management Software, Drones, AR/VR, Cloud Collaboration Tools."
     />
-    <Card
+    {/* <Card
       title="Sustainable Construction Technologies"
       image="https://img.freepik.com/free-photo/view-futuristic-looking-city_23-2150946719.jpg?t=st=1737105805~exp=1737109405~hmac=98b23539d46da67747538e58fd01b867609b4b0ef45b63c353c21407320b7519&w=996"
-      description="Energy-Efficient Materials: Insulated concrete forms, low-E glass, cross-laminated timber; Waste Management: Recycling tech."/>
+      description="Energy-Efficient Materials: Insulated concrete forms, low-E glass, cross-laminated timber; Waste Management: Recycling tech."/> */}
   </div>
 </section>
 <section id="methodology">
@@ -162,10 +162,10 @@ export default function ServicesPage() {
       title="Integrated Project Delivery"
       description="Share risks and rewards among stakeholders."
     />
-    <Card
+    {/* <Card
       title="Lean Construction"
       description="Reduces waste, maximizes value, and ensures continuous improvement."
-    />
+    /> */}
   </div>
 </section>
     </div>
