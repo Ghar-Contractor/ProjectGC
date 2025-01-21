@@ -5,14 +5,14 @@
     padding: 20px;
     max-width: 1200px;
     margin: auto;
-    background-color: #f4f4f9;
+    background-color: #F3F4F6;
   }
   
   .title {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 30px;
-    color: #333;
+    color: #4B5563;
     text-transform: uppercase;
     letter-spacing: 1.5px;
   }
@@ -25,7 +25,7 @@
   }
   
   .project-card {
-    background: #fff;
+    background: #F3F4F6;
     border: none;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -48,14 +48,14 @@
   
   .project-title {
     font-size: 1.6rem;
-    color: #444;
+    color: #B91C1C;
     margin-bottom: 10px;
     font-weight: 600;
   }
   
   .project-description {
     font-size: 1rem;
-    color: #555;
+    color: #4B5563;
     line-height: 1.5;
   }
   
@@ -101,7 +101,7 @@
   .testimonial-name {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #222;
+    color: #1E40AF;
     margin-top: 10px;
   }
   
