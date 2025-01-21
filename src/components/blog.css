@@ -1,118 +1,143 @@
-
 body {
-    font-family: 'Aerial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #daf3f9;
-    color: #333;
-  }
-  
-  
-  header {
-    background: linear-gradient(90deg, #7c9eff, #7df9a3);
-    color: #0d0d0d;
-    height: 120px;
-    font-size: larger;
-    padding: 1rem 0;
-    line-height: 100px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .blog-category {
-    margin-top: 30px;
-    padding: 20px;
-  }
-  
-  .blog-category h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #736a6a;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  
+  font-family: 'Aerial', sans-serif;
+  line-height: 1.8; /* Improved readability */
+  margin: 0;
+  padding: 0;
+  background-color: #daf3f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #7c9eff, #7df9a3);
+  color: #0d0d0d;
+  height: auto; /* Adjusted for better flexibility */
+  font-size: 1.5rem; /* Slightly larger for prominence */
+  line-height: 1.5; /* Adjusted line height for better readability */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem; /* Increased padding for a balanced header */
+}
+
+.blog-category {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.blog-category h2 {
+  font-size: 2.5rem; /* Slightly larger for better visual hierarchy */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #736a6a;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px; /* Enhanced letter spacing for aesthetic */
+}
+
+.container {
+  max-width: 1100px; /* Reduced width for better focus */
+  margin: 20px auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* More adaptive */
+  gap: 30px; /* Increased gap for better spacing */
+}
+
+.blog-post {
+  background: #a7cff5;
+  padding: 20px; /* Reduced padding for compactness */
+  border-radius: 15px; /* Slightly sharper corners for modern look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(201, 169, 255, 0.3); /* Softer hover shadow */
+  background-color: #9ee8b9;
+  color: #373737;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto; /* Ensures responsiveness */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Increased space for clarity */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.blog-post h3 {
+  margin: 10px 0;
+  color: #000000;
+  font-size: 1.8rem; /* More prominent titles */
+}
+
+.blog-post small {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000000;
+  font-style: italic; /* Added subtle emphasis */
+}
+
+.blog-post p {
+  overflow: hidden;
+  max-height: 100px;
+  line-height: 1.6; /* Better readability */
+  transition: max-height 0.3s ease-out;
+}
+
+.blog-post p.expanded {
+  max-height: 500px;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #0a0b0b;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 550;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  outline: none;
+  margin-top: 10px; /* Added spacing */
+}
+
+.read-more-btn:hover {
+  background-color: #3498db;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Enhanced Responsiveness */
+@media (max-width: 768px) {
   .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid for tablets */
   }
-  
-  
+
   .blog-post {
-    background: #a7cff5;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
-    position: relative;
-    overflow: hidden;
-    height: auto;
+      padding: 15px;
   }
-  
-  .blog-post:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(201, 169, 255, 0.4);
-    background-color:  #9ee8b9;
-    color: #373737;
-  }
-  
-  
-  .blog-post img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  
+
   .blog-post h3 {
-    margin: 0;
-    color: #000000;
-    font-size: 1.5rem;
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
-  
-  .blog-post small {
-    display: block;
-    font-size: 1.0rem;
-    margin-bottom: 10px;
-    color: #000000;
+}
+
+@media (max-width: 480px) {
+  .container {
+      grid-template-columns: 1fr; /* Single-column layout for small screens */
   }
-  
-  
-  .blog-post p {
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
-    max-height: 100px;  
+
+  header {
+      font-size: 1.2rem; /* Adjust font size for compactness */
+      padding: 1rem;
   }
-  
-  .blog-post p.expanded {
-    max-height: 500px;  
+
+  .blog-category h2 {
+      font-size: 2rem; /* Adjust heading size */
   }
-  .read-more-btn {
-    background-color: transparent;
-    color: #000000;
-    border: 1px solid #0a0b0b;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 550;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-    outline: none;
-  }
-  
-  .read-more-btn:hover {
-    background-color: #3498db;
-    color: #fff;
-    transform: translateY(-2px);
-  }
-  
-  
+}
