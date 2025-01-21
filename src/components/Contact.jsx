@@ -145,8 +145,8 @@ const Contact = () => {
       <div className="google-map">
       <iframe
     src="https://www.google.com/maps/d/embed?mid=1XNabNR3aU5-T_enGko_YcRHfR4uTNns&ehbc=2E312F"
-    width="100%"  /* Ensure iframe takes 100% of the width */
-    height="100%"  /* Set iframe height to 100% */
+    width="100%" 
+    height="100%" 
     style={{ border: 'none' }}
     title="Google Map"
     allowFullScreen=""
