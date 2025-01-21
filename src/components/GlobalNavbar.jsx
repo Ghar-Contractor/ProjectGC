@@ -30,7 +30,7 @@ export default function Navbar() {
 
         .navbar .logo .img{
           height: 70px; /* Adjust the size of the logo */
-          width: 150px;
+          width: 100px;
         }
 
         .nav-links {
