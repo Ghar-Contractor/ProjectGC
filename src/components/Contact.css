@@ -235,14 +235,12 @@ textarea {
 /* responsive google map */
 @media (max-width: 728px) {
   
-  title="Google Map"
-/>
-
+   .google-map{
     display: grid;
     grid-template-columns: 1fr;
   }
-}
 
+}
 /* Responsive layout adjustments */
 @media (max-width: 768px) {
   .page-container {
