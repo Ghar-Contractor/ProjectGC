@@ -223,20 +223,21 @@ textarea {
 }
 
 /* Google Map Section */
-.google-map {
-  width: 100%;  /* This will make the map take up the full width of its parent container */
-  height: 500px;  /* Fixed height */
-}
 
-.google-map iframe {
-  width: 100%;  /* Ensure iframe takes up 100% of the parent width */
-  height: 100%;  /* Make iframe height match the parent container's height */
-  border: none;  /* Remove default border */
+.google-map {
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
 }
 
 /* responsive google map */
 @media (max-width: 728px) {
-  .google-map {
+  
+  title="Google Map"
+/>
+
     display: grid;
     grid-template-columns: 1fr;
   }
