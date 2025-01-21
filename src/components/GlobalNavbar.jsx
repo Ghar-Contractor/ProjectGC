@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 export default function Navbar() {
   return (
     <div>
@@ -15,13 +16,21 @@ export default function Navbar() {
           position: sticky;
           top: 0;
           z-index: 1000; 
+          height:50px;
         }
 
+
         .navbar .logo a {
+          
           color: red; /* White font color for logo */
           text-decoration: none;
           font-size: 24px;
           font-weight: bold;
+        }
+
+        .navbar .logo .img{
+          height: 70px; /* Adjust the size of the logo */
+          width: 150px;
         }
 
         .nav-links {
@@ -45,7 +54,9 @@ export default function Navbar() {
 
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">MyWebsite</Link>
+        <Link to="/">
+            <img className="img" src="/src/assets/GharContractorLogo.jpg" alt="MyWebsite Logo" />
+          </Link>
         </div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>
