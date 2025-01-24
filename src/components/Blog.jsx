@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <div>
       <header>
-        <h1>Blog Page</h1>
+        <h1>Blogs</h1>
       </header>
 
       <section className="blog-category">

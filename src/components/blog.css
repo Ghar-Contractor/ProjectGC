@@ -1,90 +1,94 @@
+
+
 body {
-  font-family: 'Aerial', sans-serif;
-  line-height: 1.8; /* Improved readability */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
   margin: 0;
   padding: 0;
-  background-color: #daf3f9;
-  color: #333;
+  background-color: #F3F4F6;
+  color: #4B5563;
 }
 
 header {
-  background: linear-gradient(90deg, #7c9eff, #7df9a3);
-  color: #0d0d0d;
-  height: auto; /* Adjusted for better flexibility */
-  font-size: 1.5rem; /* Slightly larger for prominence */
-  line-height: 1.5; /* Adjusted line height for better readability */
+  background: linear-gradient(to right, #a81818, #343635);
+  color: #ffffff;
+  height: auto;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 1.5rem; /* Increased padding for a balanced header */
+  padding: 1.5rem;
 }
 
-.blog-category {
-  margin-top: 30px;
-  padding: 20px;
+header h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
+
 
 .blog-category h2 {
-  font-size: 2.5rem; /* Slightly larger for better visual hierarchy */
+  font-size: 3rem;
   text-align: center;
-  margin-bottom: 20px;
-  color: #736a6a;
+  margin-bottom: 30px;
+  color: #4B5563;
   text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 3px; /* Enhanced letter spacing for aesthetic */
+  letter-spacing: 1.5px;
 }
 
+
 .container {
-  max-width: 1100px; /* Reduced width for better focus */
+  max-width: 1200px;
   margin: 20px auto;
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* More adaptive */
-  gap: 30px; /* Increased gap for better spacing */
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .blog-post {
-  background: #a7cff5;
-  padding: 20px; /* Reduced padding for compactness */
-  border-radius: 15px; /* Slightly sharper corners for modern look */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for contrast */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  background: #F3F4F6;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #c5c7ca;
 }
 
 .blog-post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(201, 169, 255, 0.3); /* Softer hover shadow */
-  background-color: #9ee8b9;
-  color: #373737;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .blog-post img {
-  width: 100%;
-  height: auto; /* Ensures responsiveness */
-  border-radius: 10px;
-  margin-bottom: 15px; /* Increased space for clarity */
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
 .blog-post h3 {
-  margin: 10px 0;
+  font-size: 1.6rem;
   color: #000000;
-  font-size: 1.8rem; /* More prominent titles */
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .blog-post small {
-  display: block;
   font-size: 1rem;
+  color: #777;
   margin-bottom: 10px;
-  color: #000000;
-  font-style: italic; /* Added subtle emphasis */
+  display: block;
 }
 
 .blog-post p {
+  font-size: 1rem;
+  color: #4B5563;
+  line-height: 1.5;
   overflow: hidden;
   max-height: 100px;
-  line-height: 1.6; /* Better readability */
   transition: max-height 0.3s ease-out;
 }
 
@@ -94,8 +98,8 @@ header {
 
 .read-more-btn {
   background-color: transparent;
-  color: #000000;
-  border: 1px solid #0a0b0b;
+  color: #B91C1C;
+  border: 1px solid #B91C1C;
   padding: 10px 20px;
   border-radius: 30px;
   cursor: pointer;
@@ -103,41 +107,41 @@ header {
   font-weight: 550;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   outline: none;
-  margin-top: 10px; /* Added spacing */
+  margin-top: 10px;
 }
 
 .read-more-btn:hover {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #B91C1C;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
-/* Enhanced Responsiveness */
+
 @media (max-width: 768px) {
   .container {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid for tablets */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
   .blog-post {
-      padding: 15px;
+    padding: 15px;
   }
 
   .blog-post h3 {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-      grid-template-columns: 1fr; /* Single-column layout for small screens */
+    grid-template-columns: 1fr;
   }
 
   header {
-      font-size: 1.2rem; /* Adjust font size for compactness */
-      padding: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 
   .blog-category h2 {
-      font-size: 2rem; /* Adjust heading size */
+    font-size: 2rem;
   }
 }
