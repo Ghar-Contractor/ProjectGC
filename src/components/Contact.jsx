@@ -1,11 +1,19 @@
 import React from 'react';
+import  { useState } from 'react';
 import './Contact.css';
 import Header from '../assets/images/headingbg.jpg'
 import Call from '../assets/images/callicon.png'
 import Loc from "../assets/images/loactionicon.png"
 import Mail from "../assets/images/mailicon.png"
+import Meet from "../assets/images/meeticon.png"
+import Interiorteam from "../assets/images/interiorteam.png"
 
 const Contact = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+
   return (
     <div className="contact-page">
       {/* Contact Page Header Section */}
@@ -44,28 +52,101 @@ const Contact = () => {
       </div>
       </div>
     </div>
+        
         </div>
 
         <div className="contact-card1">
+        
+          <img src={Meet} alt="Meeting Icon" className="circle-img" />
           <h2>Book Your Appointment</h2>
-          <button className="card-btn">Contact our Team</button>
+          <button className="btn"
+      onClick={openModal}
+    >Click Here</button>
         </div>
 
         <div className="contact-card2">
+        <img src={Interiorteam} alt="Interior Team Icon" className="circle-img" />
           <h2>Contact Interior Designing Team</h2>
-          <button className="card-btn">Contact Here</button>
+          <button className="btn"
+      onClick={openModal}
+    >Click Here</button>
         </div>
       </div>
       
+            {/* Modal */}
+            {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-card">
+            <button className="close-modal-btn" onClick={closeModal}>
+              ×
+            </button>
+            
+            <form className="contact-form">
+            <h2 className="form-header">What can we help you with?</h2>
+            <select className="form-select" defaultValue="">
+              <option value="" disabled>
+                ---------- Select An Option --------------
+              </option>
+              <option>Enquire for a property</option>
+              <option>Contact with Our Interior Designing Team</option>
+              <option>Others</option>
+            </select>
+            <h3 className="form-subheader">Contact details</h3>
+              {/* Form Fields */}
+              <div className="form-group">
+               
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required />
+              </div>
+              <div className="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your number" required />
+              </div>
+              <div className="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required />
+              </div>
+              <div className="form-group">
+                <label>Location</label>
+                <select required defaultValue="">
+                  <option value="" disabled>
+                    Select Location
+                  </option>
+                  <option>Pune</option>
+                  <option>Noida</option>
+                  <option>Bangalore</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <label>Message</label>
+                <textarea placeholder="Type your message"></textarea>
+              </div>
+              {/* Submit Button */}
+              <button type="submit" className="submit-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+
 
       {/* Google Maps Section */}
       <div className="map">
+        <div className='map-text'>
+          <div className='map-heading'>
+            <b>View Our Office Locations</b><br/></div>
+
+Explore the locations of our three offices on the interactive map below. 
+Click on the markers to get detailed information, including directions, contact details, and more about each office. 
+</div>
       <iframe
- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.894435706666!2d73.78873047496211!3d18.488440282598884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb088b75f8f%3A0x499414447665729d!2sRMD%20SINHGAD%20TECHNICAL%20INSTITUTE%20CAMPUS!5e0!3m2!1sen!2sin!4v1737655730393!5m2!1sen!2sin"
-title="Google Maps Embed"
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  ></iframe>
+  src="https://www.google.com/maps/d/embed?mid=1XNabNR3aU5-T_enGko_YcRHfR4uTNns&ehbc=2E312F"
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  allowFullScreen="false">
+</iframe>
       </div>
     </div>
     
