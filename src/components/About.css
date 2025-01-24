@@ -4,10 +4,11 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    background-color: #F3F4F6;
   }
   
   .page-wrapper {
-    background: linear-gradient(to bottom, #e6f2ff, #e6fff2);
+    /* background: linear-gradient(to bottom, #e6f2ff, #e6fff2); */
     min-height: 100vh;
   }
   
@@ -19,13 +20,13 @@ body {
     font-family: Arial, sans-serif;
   }
   .tageline1{
-    color: #1e40af;
+    color: #4B5563;
     text-align: center;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
   }
     .tageline2{
-      color: #1e40af;
+      color: #4B5563;
         text-align: center;
         margin-bottom: 20px;
         margin-top: 10px;
@@ -33,14 +34,14 @@ body {
     }
 
     .tageline3{
-      color: #1e40af;
+      color: #4B5563;
         text-align: center;
         margin-bottom: 0;
         font-family: Arial, sans-serif;
     }
 
     .tageline4{
-      color: #1e40af;
+      color: #4B5563;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -53,10 +54,11 @@ body {
     font-family: Arial, sans-serif;
   }
   .typo {
-    color: #1e40af;
-    margin-bottom: 20px;
+    color: #B91C1C;
+    margin-bottom: 2px;
     font-family: Arial, sans-serif;
     text-align: center;
+    font-size: 50px;
   }
   
   .page-title {
@@ -67,7 +69,7 @@ body {
   }
   
   .section-title {
-    color: #1e40af;
+    color: #B91C1C;
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
@@ -128,6 +130,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: Arial, sans-serif;
+    border: 2px solid #c5c7ca;
   }
   
   .value-card:hover {
@@ -137,7 +140,7 @@ body {
   
   .value-card h3 {
     font-size: 1.5rem;
-    color: #2563eb;
+    color: #003097;
   }
   
   /* Team section */
@@ -155,6 +158,11 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #c5c7ca;
+  }
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   }
   
   .team-member img {
@@ -167,7 +175,7 @@ body {
   
   .team-member h3 {
     font-size: 1.5rem;
-    color: #2563eb;
+    color: #003097;
     margin-bottom: 10px;
   }
   
@@ -178,7 +186,7 @@ body {
   
   /* CTA section */
   .cta-section {
-    background: linear-gradient(to right, #2563eb, #22c55e);
+    background: linear-gradient(to right, #a81818, #343635);
     color: white;
     padding: 40px;
     border-radius: 10px;
@@ -190,6 +198,11 @@ body {
   .cta-section h2 {
     color: white;
     font-size: 2rem;
+    margin-bottom: 2px;
+  }
+
+  .cta-section p{
+    margin-top: 2px;
     margin-bottom: 20px;
   }
   

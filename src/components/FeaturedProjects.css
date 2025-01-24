@@ -33,6 +33,7 @@
     text-align: center;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #c5c7ca;
   }
   
   .project-card:hover {
@@ -84,6 +85,7 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid #c5c7ca;
   }
   
   .testimonial-card:hover, .completed-project-card:hover {
@@ -101,7 +103,7 @@
   .testimonial-name {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #1E40AF;
+    color: #003097;
     margin-top: 10px;
   }
   
@@ -114,6 +116,7 @@
     width: 100%;
     border-radius: 12px 12px 0 0;
     margin-bottom: 15px;
+   
   }
   
   .completed-project-title {
