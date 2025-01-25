@@ -2,23 +2,24 @@
 
   
 .card {
-  border: 1px solid #F3F4F6;
+  border: 2px solid #c5c7ca;
   border-radius: 12px;
   overflow: hidden;
   width: 300px;
   margin: 20px;
-  box-shadow: 2px solid #c5c7ca;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, background-color 0.2s, box-shadow 0.3s ease-in-out;
   background: #F3F4F6;
   font-family: "Arial", sans-serif;
   flex: 1 1 200px;
+  border-color: #c5c7ca;
 }
 
 .card:hover {
   transform: scale(1.05);
   background-color: #e6e6fa; /* Soft pastel lavender */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Added a subtle shadow on hover */
-  border-color: #d1d1e0; /* Slightly darker border color on hover */
+  border-color: #c5c7ca; /* Slightly darker border color on hover */
 }
 
 .card:focus-within {
@@ -99,7 +100,7 @@
 .methodology-heading, .tools-heading {
   flex: 0 0 100%;
   margin-bottom: 20px;
-  font-size: 1.6em; 
+  font-size:2rem;
   color: #f4f4f9; /* Very light grey for contrast */
   background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Royal blue to light violet gradient */
   padding: 2px; /* Further reduced padding for subheading */
@@ -149,6 +150,7 @@ section{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.2s ease-in-out; /* Smooth hover transition */
     position: relative; /* Positioning for before and after pseudo-elements */
+    font-size: 3.5rem;
 }
 
 .Head1:hover {
@@ -191,9 +193,10 @@ section{
   
   .Head2 {
     text-align: center;
+    font-size: 3rem;
     margin-top: 20px;
     font-family: "Arial sans-serif";
-    color: #4b5563; /* Dark blue for contrast */
+    color: #4B5563; /* Dark blue for contrast */
     
     padding-bottom: 5px; /* Space below text */
     display: block; /* Ensure it takes full width and appears on a new line */
@@ -201,7 +204,7 @@ section{
   }
   
   .Head2:hover {
-    color: #4b5563; /* Slightly brighter blue on hover */
+    color: #4B5563; /* Slightly brighter blue on hover */
     border-bottom-color: #4b5563; /* Change underline color on hover */
   }
 
