@@ -154,7 +154,7 @@ p {
   padding-top: 10px; 
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   margin-top: 15px;
   display: grid;
