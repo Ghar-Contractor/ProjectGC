@@ -99,7 +99,8 @@
   font-size: 3rem;
   margin-top: 20px;
   font-family: "Arial sans-serif";
-  color: #4B5563; /* Dark blue for contrast */
+  font-size: 2.5rem;
+  color:#B91C1C;
   
   padding-bottom: 5px; /* Space below text */
   display:flex;
@@ -108,8 +109,8 @@
 }
 
 .methodology-heading:hover, .tools-heading:hover {
-  color: #4B5563; /* Slightly brighter blue on hover */
-    border-bottom-color: #4b5563; /* Change underline color on hover */
+  color: #B91C1C; /* Slightly brighter blue on hover */
+  
   
 }
 
@@ -205,9 +206,7 @@ section{
   }
   
  
-  .methodology-heading,.tools-heading{
-    font-size: 2.5rem;
-  }
+  
   
   
 
