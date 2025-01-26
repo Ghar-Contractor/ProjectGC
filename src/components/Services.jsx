@@ -39,8 +39,9 @@ export default function ServicesPage() {
       
 
       <section id="tools-and-technologies">
-        <div className='cards-container'>
-                <h2 className='tools-heading'>Tools and Technologies</h2>
+      
+                <h3 className='tools-heading'>Tools and Technologies</h3>
+                <div className='cards-container'>
                 <Card
                     title="Design Software"
                     image="image5.webp"
@@ -119,8 +120,9 @@ export default function ServicesPage() {
 
 
 <section id="tools-and-technologies">
-  <div className="cards-container">
+  
     <h3 className="tools-heading">Tools and Technologies</h3>
+    <div className="cards-container">
     <Card
       title="Construction Tools"
       image="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg"

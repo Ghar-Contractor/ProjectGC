@@ -11,8 +11,8 @@
   transition: transform 0.2s, background-color 0.2s, box-shadow 0.3s ease-in-out;
   background: #F3F4F6;
   font-family: "Arial", sans-serif;
-  flex: 1 1 200px;
   border-color: #c5c7ca;
+  
 }
 
 .card:hover {
@@ -39,7 +39,7 @@
 }
 
 .card-content {
-  padding: 15px;
+  padding: 20px;
   font-family: "Arial", sans-serif;
   transform: translateY(20px);
   transition: opacity 0.3s, transform 0.3s;
@@ -72,50 +72,45 @@
 }
 
 
-#methodology{
+#methodology {
   background-color: #ffffff;
   padding: 5px; 
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-evenly;
-  font-family:"Arial sans-serif";
-  
-  
+  font-family: "Arial sans-serif";
 }
 
-
-
-#tools-and-technologies{
+#tools-and-technologies {
   background-color: #ffffff;
   padding: 15px; 
-
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-evenly;
-  font-family:"Arial sans-serif";
+  display:flex;
+  justify-content:space-evenly;
+  
+  flex-direction: column; /* Ensure the heading is above the cards */
+  align-items: center; /* Center the content */
+  font-family: "Arial sans-serif";
 }
 
 
 /* Refined Methodology Heading and Tools Heading */
 .methodology-heading, .tools-heading {
-  flex: 0 0 100%;
-  margin-bottom: 20px;
-  font-size:2rem;
-  color: #f4f4f9; /* Very light grey for contrast */
-  background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Royal blue to light violet gradient */
-  padding: 2px; /* Further reduced padding for subheading */
-  border-radius: 10px; 
   text-align: center;
-  transition: background 0.3s ease-in-out, transform 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  letter-spacing: 1px;
-  text-transform: uppercase; 
+  font-size: 3rem;
+  margin-top: 20px;
+  font-family: "Arial sans-serif";
+  color: #4B5563; /* Dark blue for contrast */
+  
+  padding-bottom: 5px; /* Space below text */
+  display:flex;
+  flex-direction: column;/* Ensure it takes full width and appears on a new line */
+  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
 }
 
 .methodology-heading:hover, .tools-heading:hover {
-  background: linear-gradient(135deg, #3c41a1, #707dfb); /* Slightly darker gradient on hover */
-  color: #ffffff; /* Pure white text on hover */
-  transform: translateY(-3px); 
+  color: #4B5563; /* Slightly brighter blue on hover */
+    border-bottom-color: #4b5563; /* Change underline color on hover */
+  
 }
 
 
@@ -132,11 +127,7 @@ section{
   margin:0px;
 }
 
- .methodology-heading { text-align: center; margin-top: 20px;
-  font-family:"Arial sans-serif";
- 
-  /* /background-color: #3b82f6; Add a white background color */
-   color:white; /* Optional: Change the text color */ }
+
 
    .Head1 {
     text-align: center;
@@ -199,7 +190,8 @@ section{
     color: #4B5563; /* Dark blue for contrast */
     
     padding-bottom: 5px; /* Space below text */
-    display: block; /* Ensure it takes full width and appears on a new line */
+    display: flex;
+    flex-direction: column; /* Ensure it takes full width and appears on a new line */
     transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
   }
   
@@ -213,7 +205,9 @@ section{
   }
   
  
-  
+  .methodology-heading,.tools-heading{
+    font-size: 2.5rem;
+  }
   
   
 
