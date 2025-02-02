@@ -11,7 +11,8 @@ import ResidentialApartment from "../assets/residentailapart.jpeg";
 import ShoppingMall from "../assets/shoppingmall.jpeg";
 import Client1 from '../assets/client1.jpeg'; 
 import Client2 from '../assets/client2.jpeg'; 
-import Client3 from '../assets/client3.jpeg'; 
+import Client3 from '../assets/client3.jpeg';
+
 
 export default function FeaturedProjects() {
   const projects = [

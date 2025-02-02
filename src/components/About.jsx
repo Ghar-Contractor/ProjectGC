@@ -1,8 +1,10 @@
 import React from 'react'
 import './About.css';
+
 import mission1 from '../assets/missionimg.png'
 import person1 from '../assets/person1.jpg';
 import person2 from '../assets/person2.jpg';
+
 export default function About() {
   return (
     <div className="page-wrapper">

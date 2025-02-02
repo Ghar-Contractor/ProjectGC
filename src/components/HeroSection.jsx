@@ -139,4 +139,5 @@ quoteButtonStyle.onMouseOut = (e) => {
   e.target.style.boxShadow = '0px 4px 15px rgba(255, 75, 43, 0.3)'; // Reset shadow
 };
 
+
 export default HeroSection;
