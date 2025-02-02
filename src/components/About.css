@@ -14,18 +14,18 @@ body {
   }
   
   .main-content {
-<<<<<<< HEAD
+
     width: auto;
     height: auto;
     /* max-width: 92%; */
     /* margin: auto; */
     /* padding: 20px; */
-=======
+
     width: 90%;
     /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px;
->>>>>>> 8fb94a9ec25c7f91e4d4ccead8364db202090f28
+
     font-family: Arial, sans-serif;
     
   }
