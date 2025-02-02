@@ -61,7 +61,7 @@
 
 .card-description {
   margin-top: 10px;
-  color: #555;
+  color: rgb(85, 85, 85);
   font-family: "Arial", sans-serif;
   line-height: 1.5;
 }
@@ -93,26 +93,39 @@
 }
 
 
-/* Refined Methodology Heading and Tools Heading */
+
+
+
+/* Enhanced Methodology Heading and Tools Heading */
 .methodology-heading, .tools-heading {
   text-align: center;
-  font-size: 3rem;
-  margin-top: 20px;
-  font-family: "Arial sans-serif";
-  font-size: 2.5rem;
-  color:#B91C1C;
-  
-  padding-bottom: 5px; /* Space below text */
-  display:flex;
-  flex-direction: column;/* Ensure it takes full width and appears on a new line */
-  transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition */
+  font-family: "Arial, sans-serif";
+  font-size: 2.5rem; /* Unified font-size */
+  color: #ffffff; /* White color for text */
+  margin: 20px 0; /* Unified margin */
+  padding: 10px 20px; /* Added padding for more definition */
+  width: 100%; /* Ensures full width */
+  display: block; /* Ensures it takes full width */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  background: linear-gradient(to right, #00aaff, #0077b6); /* Enhanced gradient background */
+  border-radius: 8px; /* Softer rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .methodology-heading:hover, .tools-heading:hover {
-  color: #B91C1C; /* Slightly brighter blue on hover */
-  
-  
+  color: #d1e1f1; /* Slightly lighter color on hover */
+  background-color: #005f73; /* Slightly darker background on hover */
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -130,56 +143,53 @@ section{
 
 
 
-   .Head1 {
-    text-align: center;
-    margin-top: 20px;
-    font-family:"Arial sans-serif"; /* Elegant serif font */
-    color: #ffffff; /* Deep navy color for text */
-    background: linear-gradient(to right, #a81818, #343635);
-    padding: 20px 40px; /* More spacious padding */
-    border-radius: 12px; /* Softer rounded corners */
-    display: block; /* Full width and new line */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.2s ease-in-out; /* Smooth hover transition */
-    position: relative; /* Positioning for before and after pseudo-elements */
-    font-size: 3.5rem;
+/* Professional Main Heading with Bolder Gradient Background */
+.Head1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Arial, sans-serif"; /* Elegant sans-serif font */
+  color: #ffffff; /* White color for text */
+  background: linear-gradient(to right, #EF4136, #FBB040); /* Bolder gradient background */
+  padding: 20px 40px; /* Spacious padding */
+  border-radius: 8px; /* Softer rounded corners */
+  display: block; /* Full width and new line */
+  box-shadow: none; /* No shadow for a cleaner look */
+  
+  font-size: 3rem;
 }
 
 .Head1:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+  color: #d1e1f1; /* Slightly lighter color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
 }
 
 .Head1::before, .Head1::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: linear-gradient(to right, #a81818, #343635); /* Accent line color */
-    left: 0;
-    transition: transform 0.2s ease-in-out;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff; /* Accent line color */
+  left: 50%;
+  border-radius: 8px;
 }
 
 .Head1::before {
-    top: 0;
-    transform: scaleX(0);
-    transform-origin: left;
+  top: 0;
 }
 
 .Head1::after {
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: right;
+  bottom: 0;
 }
 
-.Head1:hover::before {
-    transform: scaleX(1);
-    transform-origin: right;
+.Head1:hover::before, .Head1:hover::after {
+  width: 100%; /* Full width underline on hover */
+  left: 0;
 }
 
-.Head1:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
+
+
+
+
 
 
   
