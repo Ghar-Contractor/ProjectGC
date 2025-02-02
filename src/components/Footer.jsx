@@ -99,4 +99,20 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaEnvelop
                                               <div className="footer-section"> 
                                                 <h4 className="footer-heading">Follow Us</h4> 
                                                 <ul> 
-                                                  <li> <FaInstagram className="footer-icon1" /> <a href="#" className="footer-link">Instagram</a> </li> <li> <FaFacebook className="footer-icon2" /> <a href="#" className="footer-link">Facebook</a> </li> <li> <FaLinkedin className="footer-icon3" /> <a href="#" className="footer-link">LinkedIn</a> </li> </ul> </div> </div> <div className="footer-bottom"> <p>&copy; {currentYear} Code with yourself. All Rights Reserved.</p> </div> </footer> ); }; export default Footer;
+                                                  <li> <FaInstagram className="footer-icon1" /> 
+                                                  <a href="#" className="footer-link">Instagram</a>
+                                                   </li> <li> <FaFacebook className="footer-icon2" /> 
+                                                   <a href="#" className="footer-link">Facebook</a> 
+                                                   </li> <li> <FaLinkedin className="footer-icon3" /> 
+                                                   <a href="#" className="footer-link">LinkedIn</a> 
+                                                   </li> 
+                                                   </ul> 
+                                                   </div> 
+                                                   </div> 
+                                                   <div className="footer-bottom"> 
+                                                    <p>&copy; {currentYear} Code with yourself. All Rights Reserved.</p> 
+                                                    </div> 
+                                                    </footer> 
+                                                    ); 
+                                                  }; 
+                                                  export default Footer;

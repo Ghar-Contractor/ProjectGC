@@ -3,7 +3,7 @@
 .featured-projects-container {
     font-family: 'Poppins', sans-serif;
     padding: 20px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
     background-color: #ffffff;
   }

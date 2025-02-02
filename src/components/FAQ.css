@@ -19,6 +19,7 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
   justify-self: center;
   transition: box-shadow 0.3s ease; /* Smooth transition */
+  
 }
 
 .faq-container:hover {
