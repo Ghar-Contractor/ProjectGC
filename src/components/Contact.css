@@ -63,9 +63,10 @@
   grid-template-columns: 1fr; 
   grid-template-rows: auto; 
   gap: 20px;
-  padding: 100px;
+  padding: 80px;
   height: auto;
   margin-bottom: 10px;
+  margin-top: 10px;
   box-sizing: border-box; 
   background-image: url('/greybg.jpg'); 
   background-size: cover;

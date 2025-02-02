@@ -50,7 +50,7 @@ const Contact = () => {
         </p>
       </div>
       <p>
-       <b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ea in minima? </b>
+       <b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ea in minima? </b><br/>
        Quisquam, vitae molestias sapiente laboriosam delectus fugiat! Alias, nihil voluptates. Beatae perspiciatis sed eligendi error minus exercitationem rerum.
       </p>
       </div>
