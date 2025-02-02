@@ -1,7 +1,7 @@
-import React from 'react';
 import  { useState } from 'react';
 import './Contact.css';
-import Header from '../assets/images/headingbg.jpg'
+
+import Header from '../assets/images/orgbg.jpg'
 import Call from '../assets/images/callicon.png'
 import Loc from "../assets/images/loactionicon.png"
 import Mail from "../assets/images/mailicon.png"
@@ -12,7 +12,6 @@ const Contact = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
 
   return (
     <div className="contact-page">
@@ -64,13 +63,13 @@ const Contact = () => {
     >Click Here</button>
         </div>
 
-        <div className="contact-card2">
+        {/* <div className="contact-card2">
         <img src={Interiorteam} alt="Interior Team Icon" className="circle-img" />
           <h2>Contact Interior Designing Team</h2>
           <button className="btn"
       onClick={openModal}
     >Click Here</button>
-        </div>
+        </div> */}
       </div>
       
             {/* Modal */}
@@ -131,7 +130,6 @@ const Contact = () => {
       )}
 
 
-
       {/* Google Maps Section */}
       <div className="map">
         <div className='map-text'>
@@ -141,12 +139,14 @@ const Contact = () => {
 Explore the locations of our three offices on the interactive map below. 
 Click on the markers to get detailed information, including directions, contact details, and more about each office. 
 </div>
-      <iframe
-  src="https://www.google.com/maps/d/embed?mid=1XNabNR3aU5-T_enGko_YcRHfR4uTNns&ehbc=2E312F"
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-  allowFullScreen="false">
-</iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.03447396989!2d73.86296739999999!3d18.524616450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1738484037101!5m2!1sen!2sin"
+  style={{
+    width: "100%",
+    height: "500px",
+    border: "none",
+      display: "block",
+      outline: "none",
+  }}/>
       </div>
     </div>
     
