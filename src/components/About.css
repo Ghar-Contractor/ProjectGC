@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F3F4F6;
+    width: 100%;
   }
   
   .page-wrapper {
@@ -13,20 +14,31 @@ body {
   }
   
   .main-content {
+<<<<<<< HEAD
+    width: auto;
+    height: auto;
+    /* max-width: 92%; */
+    /* margin: auto; */
+    /* padding: 20px; */
+=======
     width: 90%;
     /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px;
+>>>>>>> 8fb94a9ec25c7f91e4d4ccead8364db202090f28
     font-family: Arial, sans-serif;
+    
   }
+  
   .tageline1{
-    color: #4B5563;
+    color: #484746;
     text-align: center;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
+    font-size: 40px;
   }
     .tageline2{
-      color: #4B5563;
+      color: #484746;
         text-align: center;
         margin-bottom: 20px;
         margin-top: 10px;
@@ -34,14 +46,14 @@ body {
     }
 
     .tageline3{
-      color: #4B5563;
+      color: #484746;
         text-align: center;
         margin-bottom: 0;
         font-family: Arial, sans-serif;
     }
 
     .tageline4{
-      color: #4B5563;
+      color: #484746;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -50,16 +62,46 @@ body {
   /* Typography */
 
   h1, h2, h3 {
-    color: #1e40af; 
+    color: #e95446; 
     font-family: Arial, sans-serif;
   }
-  .typo {
-    color: #B91C1C;
-    margin-bottom: 2px;
-    font-family: Arial, sans-serif;
-    text-align: center;
+  .header{
+    color: #c5c7ca;
+  }
+  
+  .img-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 0;
+  }
+  .header img {
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  /* .header {
+    margin-top: 0;
+    background-image: url();
+    width: 94.2%;
     font-size: 50px;
-  }
+    justify-content: center;
+  color: #ffffff;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 45px;
+  } */
   
   .page-title {
     font-size: 3rem;
@@ -69,12 +111,17 @@ body {
   }
   
   .section-title {
-    color: #B91C1C;
+    color: #4B5563;
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
     font-family: Arial, sans-serif;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+ 
   
   .subtitlex {
     text-align: center;
@@ -94,33 +141,55 @@ body {
   .mission {
     display: flex;
     align-items: center;
-    gap: 40px;
     font-family: Arial, sans-serif;
+    justify-content: center;
   }
   
   .mission-content {
-    flex: 1;
+    /* flex: 1; */
     font-family: Arial, sans-serif;
+    justify-content: center;
+   text-align: center;
+    padding: 20px;
+  }
+  .mission-content p{
+    
+    font-size: 19px;
+    
   }
   
   .mission-image {
-    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    padding-right: 55px;
+    justify-content: center;
   }
   
   .mission-image img {
     width: 100%;
     max-width: 600px;
+    margin-top: 20px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
   }
   
   /* Values section */
   .values {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-items: space-between;
   }
   
   .value-card {
@@ -130,7 +199,10 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: Arial, sans-serif;
-    border: 2px solid #c5c7ca;
+    border: 2px solid #cdcbcb;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
   }
   
   .value-card:hover {
@@ -140,15 +212,19 @@ body {
   
   .value-card h3 {
     font-size: 1.5rem;
-    color: #003097;
+    color: #973a00;
   }
   
   /* Team section */
   .team {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
   }
   
   .team-member {
@@ -158,7 +234,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #c5c7ca;
+    border: 2px solid #cdcbcb;
   }
   .team-member:hover {
     transform: translateY(-5px);
@@ -175,7 +251,7 @@ body {
   
   .team-member h3 {
     font-size: 1.5rem;
-    color: #003097;
+    color: #6e6966;
     margin-bottom: 10px;
   }
   
@@ -185,25 +261,32 @@ body {
   }
   
   /* CTA section */
+  .cta{
+    padding: 60px;
+  }
+  
   .cta-section {
-    background: linear-gradient(to right, #a81818, #343635);
+    background: linear-gradient(to right, #ef4136, #fbb040);
     color: white;
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 20px;
   }
   
   .cta-section h2 {
     color: white;
     font-size: 2rem;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    font-size: 50px;
   }
 
   .cta-section p{
     margin-top: 2px;
     margin-bottom: 20px;
+    font-size: 20px;
   }
   
   .cta-button {
@@ -224,7 +307,7 @@ body {
   }
   
  
-  footer {
+  /* footer {
     background-color: #1e40af;
     color: white;
     padding: 60px 0 40px;
@@ -277,8 +360,8 @@ body {
     border-top: 1px solid #3b82f6;
     color: white;
   }
-   
-  /* /* @media (max-width: 768px) {
+    */
+   @media (max-width: 768px) {
     .mission {
       flex-direction: column;
     }
@@ -295,8 +378,10 @@ body {
       font-size: 1.8rem;
     }
   
-    .value-card h3,
+    .value-card h3{
+      font-size: 1.3rem;
+    }
     .team-member h3 {
       font-size: 1.3rem;
     }
-  }  */
+  }

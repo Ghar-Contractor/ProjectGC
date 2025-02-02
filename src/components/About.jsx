@@ -4,13 +4,19 @@ import './About.css';
 import mission1 from '../assets/missionimg.png'
 import person1 from '../assets/person1.jpg';
 import person2 from '../assets/person2.jpg';
+import Header from '../assets/images/orgbg.jpg'
+
+
 
 export default function About() {
   return (
     <div className="page-wrapper">
       <div className="main-content">
         <div>
-          <h1 className="typo">About Us</h1>
+         <div className="contact-header">
+                 <img src={Header}/>
+                 <div className="img-text">ABOUT US</div>
+               </div>
           <h2 className='tageline1'>From Vision to Reality: A Journey of Excellence</h2>
           <p className="subtitlex">
             We are a team of passionate individuals dedicated to delivering exceptional solutions and driving innovation in our industry.
@@ -29,14 +35,14 @@ export default function About() {
                 We strive to be at the forefront of technological advancements, constantly innovating to meet the evolving needs of our clients.
               </p>
             </div>
-            <div className="mission-image">
+            <div className= "mission-image">
               <img src={mission1} alt="Our Mission" />
             </div>
           </div>
         </div>
 
-        <div>
-          <h2 className="section-title">Our Values</h2>
+        <div className="values-section">
+          <h2 className="section-title" >Our Values</h2>
           <h3 className='tageline3'>Quality Craftsmanship, Uncompromising Standards.</h3>
           <div className="values">
             <div className="value-card">
@@ -81,11 +87,13 @@ export default function About() {
           </div>
         </div>
 
+        <div className="cta">
         <div className="cta-section">
           <h2 className="typo">Ready to Get Started?</h2>
           <p >Join us on this exciting journey of growth and innovation.</p>
           <a href="#" className="cta-button">Contact Us</a>
         </div>
+      </div>
       </div>
     </div>
 
