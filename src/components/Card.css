@@ -95,14 +95,7 @@
 }
 
 
-#methodology {
-  background-color: #ffffff;
-  padding: 5px; 
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: space-evenly;
-  font-family: "Arial sans-serif";
-}
+
 
 #tools-and-technologies {
   background-color: #ffffff;
@@ -118,7 +111,7 @@
 
 
 /* Enhanced Methodology Heading and Tools Heading */
-.methodology-heading, .tools-heading {
+ .tools-heading {
   text-align: center;
   font-family: "Arial, sans-serif";
   font-size: 2.5rem; /* Unified font-size */
@@ -128,31 +121,83 @@
   width: 100%; /* Ensures full width */
   display: block; /* Ensures it takes full width */
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
-  background: linear-gradient(to right, #0077b6, #005f73); /* Enhanced gradient background with more muted tones */
+  background: linear-gradient(to right, #0077b6, #59828f); /* Enhanced gradient background with more muted tones */
   border-radius: 6px; /* Slightly less rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Even subtler shadow for a more professional look */
 }
 
-.methodology-heading:hover, .tools-heading:hover {
+ .tools-heading:hover {
   color: #d1e1f1; /* Slightly lighter color on hover */
   background-color: #005f73; /* Slightly darker background on hover */
   transform: scale(1.03); /* Slight scaling on hover */
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
 }
 
-body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.6;
-  color: #333333; /* Dark grey for better readability */
+#methodology {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  height:450px;
 }
 
-h1, h2, h3, .Head1, .Head2 {
-  font-weight: 600; /* Unified font weight */
+.methodology-heading {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  position: relative;
+  animation: fadeIn 1.5s;
 }
 
-p, .card-description {
-  font-size: 1rem; /* Consistent font size for body text */
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
 }
+
+.step {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  height:200px;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step h4 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 15px;
+  position: relative;
+  animation: slideIn 1s;
+}
+
+.step p {
+  color: #666;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
 
 
 

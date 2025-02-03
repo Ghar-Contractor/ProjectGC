@@ -62,31 +62,24 @@ export default function ServicesPage() {
                 </div>
             </section>
             <section id="methodology">
-              <h3 className="methodology-heading">Our Methodology</h3>
+    <h3 className="methodology-heading">Our Methodology</h3>
+    <div className="steps-container">
+        <div class="step">
+            <h4>Consultation</h4>
+            <p>Consult to understand your vision, preferences, and requirements.</p>
+        </div>
+        <div class="step">
+            <h4>Concept Development</h4>
+            <p>Designers create concepts for your feedback and approval.</p>
+        </div>
+        <div class="step">
+            <h4>Design Development</h4>
+            <p>We refine the design based on your input, selecting materials, colors, and finishes.</p>
+        </div>
+        
+    </div>
+</section>
 
-                
-              <div className="cards-container">
-                <Card
-                    title="Consultation"
-                   
-                    description="Consult to understand your vision, preferences, and requirements."
-                />
-                <Card
-                    title="Concept Development"
-                    
-                    description="Designers create concepts for your feedback and approval."/>
-                <Card
-                    title="Design Development"
-                    description="We refine the design based on your input, selecting materials, colors, and finishes."
-                />
-                <Card
-                    title="Execution"
-                    description="Coordinates with contractors and suppliers for quality and precision."/>
-                {/* <Card
-                    title="Final Touches"
-                    description="Finishing touches ensure every detail is perfect, from lighting to decor."/> */}
-                </div>
-            </section>
 
             <h2 className='Head2'>Construction</h2>
 
@@ -146,30 +139,27 @@ export default function ServicesPage() {
 </section>
 <section id="methodology">
   <h3 className="methodology-heading">Our Methodology</h3>
-
-  <div className="cards-container">
-    <Card
-      title="Traditional Construction "
-      description="Design creation and approval, followed by construction."
-    />
-    <Card
-      title="Design-Build "
-      description="Client hires design-build contractor; design and construction executed in parallel."
-    />
-    <Card
-      title="Construction Management at Risk"
-      description="The construction manager works with designers during the planning phase."
-    />
-    <Card
-      title="Integrated Project Delivery"
-      description="Share risks and rewards among stakeholders."
-    />
-    {/* <Card
-      title="Lean Construction"
-      description="Reduces waste, maximizes value, and ensures continuous improvement."
-    /> */}
+  <div class="steps-container">
+    <div class="step">
+      <h4>Traditional Construction</h4>
+      <p>Design creation and approval, followed by construction.</p>
+    </div>
+    <div class="step">
+      <h4>Design-Build</h4>
+      <p>Client hires design-build contractor; design and construction executed in parallel.</p>
+    </div>
+    <div class="step">
+      <h4>Construction Management at Risk</h4>
+      <p>The construction manager works with designers during the planning phase.</p>
+    </div>
+    {/* <div class="step">
+      <h4>Integrated Project Delivery</h4>
+      <p>Share risks and rewards among stakeholders.</p>
+    </div> */}
   </div>
 </section>
+
     </div>
   );
 }
+
