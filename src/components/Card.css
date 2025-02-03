@@ -17,15 +17,18 @@
 
 .card:hover {
   transform: scale(1.05);
-  background-color: #e6e6fa; /* Soft pastel lavender */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Added a subtle shadow on hover */
-  border-color: #c5c7ca; /* Slightly darker border color on hover */
+  background-color: #dcdcdc; /* Light grey */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  border-color: #a9a9a9; /* Slightly darker border color on hover */
 }
 
 .card:focus-within {
   outline: 2px dashed #d4a373;
   outline-offset: 5px;
 }
+
+
+
 
 .card-image {
   width: 100%;
@@ -94,8 +97,6 @@
 
 
 
-
-
 /* Enhanced Methodology Heading and Tools Heading */
 .methodology-heading, .tools-heading {
   text-align: center;
@@ -106,17 +107,21 @@
   padding: 10px 20px; /* Added padding for more definition */
   width: 100%; /* Ensures full width */
   display: block; /* Ensures it takes full width */
-  transition: color 0.3s ease, background-color 0.3s ease;
-  background: linear-gradient(to right, #00aaff, #0077b6); /* Enhanced gradient background */
-  border-radius: 8px; /* Softer rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+  background: linear-gradient(to right, #0077b6, #005f73); /* Enhanced gradient background with more muted tones */
+  border-radius: 6px; /* Slightly less rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Even subtler shadow for a more professional look */
 }
 
 .methodology-heading:hover, .tools-heading:hover {
   color: #d1e1f1; /* Slightly lighter color on hover */
   background-color: #005f73; /* Slightly darker background on hover */
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transform: scale(1.03); /* Slight scaling on hover */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
 }
+
+
+
 
 
 
