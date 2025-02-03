@@ -72,19 +72,21 @@ function Locations() {
 }
 
 const sectionStyle = {
-  padding: '80px 20px',
+  padding: '10px 3px',
   backgroundColor: '#f0f4f8',
   textAlign: 'center',
   fontFamily: 'Poppins, sans-serif',
-  color: 'black', // Adjust text color for contrast
+  color: '#333', // Adjust text color for contrast
+  margin: '0px 90px 0px 90px'
 };
 
 const headingStyle = {
-  color: '#1e3a8a',
+  color: '#4B5563',
   fontSize: '3em',
   fontWeight: '700',
   marginBottom: '60px',
   animation: 'fadeIn 2s ease-out',
+
 };
 
 const gridStyle = {

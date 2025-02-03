@@ -1,30 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Services() {
+  const [hoveredCardIndex, setHoveredCardIndex] = useState(null);
+  const [hoveredButtonIndex, setHoveredButtonIndex] = useState(null);
+
   const services = [
     { title: 'Interior Design', description: 'Transforming spaces with innovative and personalized designs.', image: 'src/assets/images/sevice1.jpg' },
     { title: 'Construction', description: 'Building durable and sustainable structures with precision.', image: 'src/assets/images/construction.jpg' },
-     ];
+  ];
 
   return (
     <section style={sectionStyle}>
       <h2 style={headingStyle}>Our Premium Services</h2>
       <div style={cardsContainerStyle}>
         {services.map((service, index) => (
-          <div key={index} style={cardStyle}>
+          <div
+            key={index}
+            style={getCardStyle(index)}
+            onMouseEnter={() => setHoveredCardIndex(index)}
+            onMouseLeave={() => setHoveredCardIndex(null)}
+          >
             <img src={service.image} alt={service.title} style={imageStyle} />
             <h3 style={serviceTitleStyle}>{service.title}</h3>
             <p style={serviceDescriptionStyle}>{service.description}</p>
-            <button style={learnMoreButtonStyle}>Learn More</button>
+            <button
+              style={getLearnMoreButtonStyle(index)}
+              onMouseEnter={() => setHoveredButtonIndex(index)}
+              onMouseLeave={() => setHoveredButtonIndex(null)}
+            >
+              Learn More
+            </button>
           </div>
         ))}
       </div>
     </section>
   );
+
+  // New Card Styles with Sliding Effect and Hover Animations
+  function getCardStyle(index) {
+    return {
+      backgroundColor: '#fff',
+      padding: '30px',
+      borderRadius: '15px',
+      boxShadow: hoveredCardIndex === index ? '0 15px 30px rgba(0, 0, 0, 0.25)' : '0 8px 24px rgba(0, 0, 0, 0.2)',
+      transition: 'transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease',
+      cursor: 'pointer',
+      transform: hoveredCardIndex === index ? 'translateY(-10px) scale(1.05)' : 'translateY(0) scale(1)',
+      opacity: hoveredCardIndex === index ? 1 : 0.9,
+      animation: 'slideIn 1s ease-out',
+    };
+  }
+
+  // Learn More button styles with hover effects
+  function getLearnMoreButtonStyle(index) {
+    return {
+      backgroundColor: hoveredButtonIndex === index ? '#1e40af' : '#2563eb',
+      color: 'white',
+      padding: '12px 24px',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontWeight: '600',
+      transition: 'background-color 0.3s ease, transform 0.3s ease',
+      transform: hoveredButtonIndex === index ? 'scale(1.1)' : 'scale(1)',
+    };
+  }
 }
 
 const sectionStyle = {
-  padding: '50px 20px',
+  padding: '5px 180px 15px 180px',
   backgroundColor: '#f0f4f8',
   textAlign: 'center',
   animation: 'fadeIn 2s ease-out',
@@ -33,8 +77,9 @@ const sectionStyle = {
 const headingStyle = {
   fontSize: '3.2em',
   fontWeight: '700',
-  color: '#1e3a8a',
+  color: '#4B5563',
   marginBottom: '40px',
+  
 };
 
 const cardsContainerStyle = {
@@ -42,26 +87,6 @@ const cardsContainerStyle = {
   gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
   gap: '30px',
   justifyContent: 'center',
-};
-
-const cardStyle = {
-  backgroundColor: '#fff',
-  padding: '25px',
-  borderRadius: '12px',
-  boxShadow: '0 4px 16px rgba(0, 0, 0, 0.15)',
-  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-  cursor: 'pointer',
-  animation: 'fadeIn 2s ease-out',
-};
-
-cardStyle.onMouseEnter = (e) => {
-  e.target.style.transform = 'scale(1.05)';
-  e.target.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
-};
-
-cardStyle.onMouseLeave = (e) => {
-  e.target.style.transform = 'scale(1)';
-  e.target.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.15)';
 };
 
 const imageStyle = {
@@ -80,23 +105,30 @@ const serviceDescriptionStyle = {
   color: '#555',
 };
 
-const learnMoreButtonStyle = {
-  backgroundColor: '#2563eb',
-  color: 'white',
-  padding: '10px 20px',
-  border: 'none',
-  borderRadius: '5px',
-  cursor: 'pointer',
-  fontWeight: '600',
-  transition: 'background-color 0.3s',
-};
+// Keyframe for fade-in animation
+const fadeInAnimation = `
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`;
 
-learnMoreButtonStyle.onMouseEnter = (e) => {
-  e.target.style.backgroundColor = '#1e40af';
-};
-
-learnMoreButtonStyle.onMouseOut = (e) => {
-  e.target.style.backgroundColor = '#2563eb';
-};
+// New Keyframe for sliding card effect
+const slideInAnimation = `
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+`;
 
 export default Services;

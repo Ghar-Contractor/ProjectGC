@@ -56,7 +56,7 @@ function Testimonials() {
 }
 
 const sectionStyle = {
-  padding: '80px 20px',
+  padding: '0.1px 20px',
   backgroundColor: '#f0f4f8',
   textAlign: 'center',
   fontFamily: 'Poppins, sans-serif',
@@ -64,10 +64,11 @@ const sectionStyle = {
 };
 
 const headingStyle = {
-  color: '#1e3a8a',
+  color: '#4B5563',
   fontSize: '3em',
   fontWeight: '700',
   marginBottom: '60px',
+  
 };
 
 const scrollingWrapperStyle = {
@@ -94,6 +95,7 @@ const testimonialCardStyle = {
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
+  marginBottom: '80px'
 };
 
 const blockquoteStyle = {
