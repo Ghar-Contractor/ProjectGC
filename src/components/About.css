@@ -117,9 +117,38 @@ padding: 45px;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions */
 }
 
+.section-title:hover {
+  animation: wobble-top-right 0.5s ease-in-out forwards;
+  text-shadow: 0 0 10px rgba(149, 141, 140, 0.4); /* Orange shadow on hover */
+}
 
+@keyframes wobble-top-right {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-5deg); /* Wobbly up and left */
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  75% {
+    transform: translateY(-5px) rotate(5deg); /* Wobbly up and right */
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.section-title-complex:hover {
+  animation: wobble-top-right 0.5s ease-in-out forwards; /* Wobble on hover */
+  text-shadow: 0 0 10px rgba(87, 84, 78, 0.4); /* Orange shadow on hover */
+}
+
+/* ... (rest of the complex example CSS remains the same) */
 .subtitlex {
   text-align: center;
   max-width: 800px;
