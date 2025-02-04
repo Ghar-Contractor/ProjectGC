@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css';
-
+import CountUp from 'react-countup';
 import mission1 from '../assets/missionimg.png'
 import person1 from '../assets/person1.jpg';
 import person2 from '../assets/person2.jpg';
@@ -14,7 +14,7 @@ export default function About() {
       <div className="main-content">
         <div>
          <div className="contact-header">
-                 <img src={Header}/>
+                 <div className="headerimg"><img src={Header}/></div>
                  <div className="img-text">ABOUT US</div>
                </div>
           <h2 className='tageline1'>From Vision to Reality: A Journey of Excellence</h2>
@@ -37,6 +37,24 @@ export default function About() {
             </div>
             <div className= "mission-image">
               <img src={mission1} alt="Our Mission" />
+            </div>
+          </div>
+        </div>
+
+        <div className="counter-section">
+          <h2 className="section-title">Our Achievements</h2>
+          <div className="counter-container">
+            <div className="counter-box">
+              <h3><CountUp end={150} duration={9} /></h3>
+              <h5>Projects Completed</h5>
+            </div>
+            <div className="counter-box">
+              <h3><CountUp end={25} duration={10} /></h3>
+              <h5>Projects Under Construction</h5>
+            </div>
+            <div className="counter-box">
+              <h3><CountUp end={500} duration={7} /></h3>
+              <h5>Happy Customers</h5>
             </div>
           </div>
         </div>
