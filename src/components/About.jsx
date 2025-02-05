@@ -1,8 +1,10 @@
-import React from 'react'
-import './About.css';
-import CountUp from 'react-countup';
-import mission1 from '../assets/missionimg.png'
-import person1 from '../assets/person1.jpg';
+import React from "react";
+import "./About.css";
+import CountUp from "react-countup";
+
+import mission1 from "../assets/missionimg.png";
+import person1 from "../assets/person1.jpg";
+
 import person2 from '../assets/person2.jpg';
 import Header from '../assets/images/orgbg.jpg'
 

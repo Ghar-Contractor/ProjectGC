@@ -1,5 +1,4 @@
 
-
   
 .card {
   border: 2px solid #c5c7ca;
@@ -138,7 +137,7 @@
   padding: 40px 20px;
   border-radius: 10px;
   text-align: center;
-  height:450px;
+  height: auto;
 }
 
 .methodology-heading {
@@ -154,7 +153,6 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
 
 .step {
@@ -167,7 +165,7 @@
   max-width: 300px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  height:200px;
+  height: 200px;
 }
 
 .step:hover {
@@ -187,6 +185,35 @@
   color: #666;
   animation: fadeIn 2s;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .step {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .methodology-heading {
+    font-size: 2em;
+  }
+  
+  .step {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .methodology-heading {
+    font-size: 1.8em;
+  }
+
+  .step {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; }

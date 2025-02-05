@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import "./Services.css"
+import Footer from './Footer';
 export default function ServicesPage() {
   return (
 
@@ -61,7 +62,9 @@ export default function ServicesPage() {
                     description="Using project management software to streamline communication and track progress."/> */}
                 </div>
             </section>
-            <section id="methodology">
+            
+  
+  <section id="methodology">
     <h3 className="methodology-heading">Our Methodology</h3>
     <div className="steps-container">
         <div class="step">
@@ -81,8 +84,10 @@ export default function ServicesPage() {
 </section>
 
 
-            <h2 className='Head2'>Construction</h2>
 
+           
+<section>
+<h2 className='Head2'>Construction</h2>
 <div className="cards-container">
   <Card
     title="Residential Construction"
@@ -106,7 +111,7 @@ export default function ServicesPage() {
 
 
 </div>
-
+</section>
 
 
 
@@ -137,6 +142,8 @@ export default function ServicesPage() {
       description="Energy-Efficient Materials: Insulated concrete forms, low-E glass, cross-laminated timber; Waste Management: Recycling tech."/> */}
   </div>
 </section>
+
+
 <section id="methodology">
   <h3 className="methodology-heading">Our Methodology</h3>
   <div class="steps-container">
@@ -157,9 +164,16 @@ export default function ServicesPage() {
       <p>Share risks and rewards among stakeholders.</p>
     </div> */}
   </div>
+  
+
 </section>
 
-    </div>
+
+</div>
+
+
   );
+  
+
 }
 

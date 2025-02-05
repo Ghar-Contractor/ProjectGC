@@ -10,7 +10,9 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhone, FaEnvelop
              {` .footer-container
               { background-color: #71797E;
                 color: #fff; 
-                padding: 20px 40px;
+                padding: 50px;
+                height:400px;
+                
                  font-family: Arial, 
                  sans-serif; width: 100%; /* Ensure full width */ 
                  box-sizing: border-box; /* Include padding in width calculation */ 
