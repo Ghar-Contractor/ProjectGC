@@ -6,7 +6,7 @@ import Footer from "./components/Footer.jsx"
 import Home from './components/Home.jsx';
 import About from './components/About';
 import Blog from './components/Blog';
-import Contact from './components/Contact';
+import Contact from './components/ContactUs/Contact';
 import Portfolio from './components/Portfolio';
 import FAQ from './components/FAQ';
 import Services from './components/Services';

@@ -1,12 +1,12 @@
 import  { useState } from 'react';
 import './Contact.css';
 
-import Header from '../assets/images/orgbg.jpg'
-import Call from '../assets/images/callicon.png'
-import Loc from "../assets/images/loactionicon.png"
-import Mail from "../assets/images/mailicon.png"
-import Meet from "../assets/images/meeticon.png"
-import Interiorteam from "../assets/images/interiorteam.png"
+import Header from "../../assets/images/orgbg.jpg"
+import Call from '../../assets/images/callicon.png'
+import Loc from "../../assets/images/loactionicon.png"
+import Mail from "../../assets/images/mailicon.png"
+import Meet from "../../assets/images/meeticon.png"
+
 
 const Contact = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,6 +14,8 @@ const Contact = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
+<div>
+ 
     <div className="contact-page">
       {/* Contact Page Header Section */}
       <div className="contact-header">
@@ -153,7 +155,7 @@ Click on the markers to get detailed information, including directions, contact 
   }}/>
       </div>
     </div>
-    
+    </div>
   );
 };
 
