@@ -13,9 +13,28 @@
     
     padding: 2%; font-family: "Arial", sans-serif; }
 
-    
-    
+    @media (max-width: 480px) {
+      .footer-container {
+        padding: 10px;
+      }
 
+      .footer-heading {
+        font-size: 0.8rem;
+      }
+
+      .footer-link {
+        font-size: 0.7rem;
+      }
+
+      .footer-bottom {
+        font-size: 0.7rem;
+      }
+    }
+    
+    .footer-container{
+      padding: 50px;
+      
+    }
     
   
     
