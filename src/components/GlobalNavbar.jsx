@@ -80,7 +80,7 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="logo">
           <Link to="/">
-            <img className="img" src="/src/assets/GharContractorLogo.jpg" alt="MyWebsite Logo" />
+            <img className="img" src="/GharContractorLogo.jpg" alt="MyWebsite Logo" />
           </Link>
         </div>
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
