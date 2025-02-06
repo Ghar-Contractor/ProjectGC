@@ -27,7 +27,7 @@ function Locations() {
     {
       city: 'Pune',
       description: 'The heart of Maharashtra, offering the best in design and construction.',
-      image: 'src/assets/images/pune.jpg',
+      image: 'public/images/pune.jpg',
       population: '3.1 million',
       established: '1950',
       constructionInfo: 'Pune has a booming real estate sector, with a focus on both residential and commercial projects. Many high-rise buildings and IT parks are being developed.',
@@ -35,7 +35,7 @@ function Locations() {
     {
       city: 'Noida',
       description: 'A bustling city in the NCR with limitless opportunities for modern designs.',
-      image: 'src/assets/images/noida.jpg',
+      image: 'public/images/noida.jpg',
       population: '1.2 million',
       established: '1997',
       constructionInfo: 'Noida is witnessing rapid growth in residential complexes, tech parks, and infrastructure projects, making it a key hub for construction and real estate investment.',
@@ -43,7 +43,7 @@ function Locations() {
     {
       city: 'Bangalore',
       description: 'The tech capital of India, with a growing demand for innovative spaces.',
-      image: 'src/assets/images/bangalore.jpg',
+      image: 'public/images/bangalore.jpg',
       population: '12.8 million',
       established: '1537',
       constructionInfo: 'Bangalore is a hotspot for commercial real estate, with a focus on tech parks and mixed-use developments. The city’s infrastructure is constantly evolving to meet the demands of its growing population.',

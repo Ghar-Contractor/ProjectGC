@@ -5,8 +5,8 @@ function Services() {
   const [hoveredButtonIndex, setHoveredButtonIndex] = useState(null);
 
   const services = [
-    { title: 'Interior Design', description: 'Transforming spaces with innovative and personalized designs.', image: 'src/assets/images/sevice1.jpg' },
-    { title: 'Construction', description: 'Building durable and sustainable structures with precision.', image: 'src/assets/images/construction.jpg' },
+    { title: 'Interior Design', description: 'Transforming spaces with innovative and personalized designs.', image: 'public/images/sevice1.jpg' },
+    { title: 'Construction', description: 'Building durable and sustainable structures with precision.', image: 'public/images/construction.jpg' },
   ];
 
   return (
