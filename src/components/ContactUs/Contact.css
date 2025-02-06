@@ -133,7 +133,7 @@ p {
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   width: 300px; 
-   height: 300px;
+  height: 300px;
   text-align: center;
   padding-top: 10px; 
   padding-left: 20px;
@@ -176,6 +176,8 @@ p {
   font-size: 23px;
 }
 
+
+
 .btn {
   background: #dc0606;
   color: #fff;
@@ -192,11 +194,41 @@ p {
   transform: scale(1.05);
 }
 
-.map{
-  box-sizing: border-box;
-  padding: 0 10px; 
-}
-
+/*responsive design*/
+@media (max-width: 767px) {
+  .card-parent{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    background-image: url('/greybg.jpg'); 
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  .contact-card1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 200px;
+  }
+  .contact-card1 h2{
+    font-size: 16px;
+  }
+  .left-col{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  }
 /* Modal Overlay */
 .modal-overlay {
   position: fixed;
@@ -341,7 +373,6 @@ textarea {
 
 .map{
   text-align: center;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,20 +395,6 @@ textarea {
   text-align: center;
 }
 
-/* Medium screens (Tablets: 768px - 1024px) */
-@media (max-width: 1024px) {
-  .map {
-    padding: 20px;
-  }
-
-  .map-heading {
-    font-size: 1.5rem;
-  }
-
-  .map-text {
-    font-size: 1.1rem;
-  }
-}
 
 /* Small screens (Phones: 320px - 767px) */
 @media (max-width: 767px) {
@@ -386,6 +403,7 @@ textarea {
   
     display: flex-column;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #ffffff;
    font-family: 'Poppins', sans-serif;
