@@ -43,7 +43,7 @@ function Locations() {
     {
       city: 'Bangalore',
       description: 'The tech capital of India, with a growing demand for innovative spaces.',
-      image: 'public/images/bangalore.jpg',
+      image: 'https://www.bing.com/images/blob?bcid=S.MxxVPgURIIqxcxoNWLuD9SqbotqVTdP5Y',
       population: '12.8 million',
       established: '1537',
       constructionInfo: 'Bangalore is a hotspot for commercial real estate, with a focus on tech parks and mixed-use developments. The city’s infrastructure is constantly evolving to meet the demands of its growing population.',
