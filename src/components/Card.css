@@ -1,5 +1,14 @@
 
-  
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
 .card {
   border: 2px solid #c5c7ca;
   border-radius: 12px;
@@ -11,12 +20,11 @@
   background: #F3F4F6;
   font-family: "Arial", sans-serif;
   border-color: #c5c7ca;
-  
 }
 
 .card:hover {
   transform: scale(1.05);
-  background-color: #dcdcdc; /* Light grey */
+  background-color: #e6f3ff; /* Light blue for a professional look */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
   border-color: #a9a9a9; /* Slightly darker border color on hover */
 }
@@ -25,9 +33,6 @@
   outline: 2px dashed #d4a373;
   outline-offset: 5px;
 }
-
-
-
 
 .card-image {
   width: 100%;
@@ -58,7 +63,6 @@
 .card:hover .card-image::after {
   opacity: 1;
 }
-
 
 .card-content {
   padding: 20px;
@@ -93,43 +97,125 @@
   opacity: 1;
 }
 
+/* Animation Keyframes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Apply the animations */
+.card {
+  animation: float 4s ease-in-out infinite, shadow 4s ease-in-out infinite;
+}
 
 
 
-#tools-and-technologies {
-  background-color: #ffffff;
-  padding: 15px; 
-  display:flex;
-  justify-content:space-evenly;
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Less gap between cards */
+}
+
+.step {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px 15px; /* Smaller margin */
+  padding: 20px;
+  flex: 1 1 280px; /* Slightly smaller width to fit more cards in a row */
+  max-width: 280px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  height: 200px;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step h4 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 15px;
+  position: relative;
+  animation: slideIn 1s;
+}
+
+.step p {
+  color: #666;
+  animation: fadeIn 2s;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .step {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .methodology-heading {
+    font-size: 2em;
+  }
   
-  flex-direction: column; /* Ensure the heading is above the cards */
-  align-items: center; /* Center the content */
-  font-family: "Arial sans-serif";
+  .step {
+    flex: 1 1 100%;
+  }
 }
 
+@media (max-width: 480px) {
+  .methodology-heading {
+    font-size: 1.8em;
+  }
 
-
-/* Enhanced Methodology Heading and Tools Heading */
- .tools-heading {
-  text-align: center;
-  font-family: "Arial, sans-serif";
-  font-size: 2.5rem; /* Unified font-size */
-  color: #ffffff; /* White color for text */
-  margin: 20px 0; /* Unified margin */
-  padding: 10px 20px; /* Added padding for more definition */
-  width: 100%; /* Ensures full width */
-  display: block; /* Ensures it takes full width */
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
-  background: linear-gradient(to right, #0077b6, #59828f); /* Enhanced gradient background with more muted tones */
-  border-radius: 6px; /* Slightly less rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Even subtler shadow for a more professional look */
+  .step {
+    margin: 10px;
+    padding: 15px;
+  }
 }
 
- .tools-heading:hover {
-  color: #d1e1f1; /* Slightly lighter color on hover */
-  background-color: #005f73; /* Slightly darker background on hover */
-  transform: scale(1.03); /* Slight scaling on hover */
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+/* Methodology */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
 }
 
 #methodology {
@@ -151,21 +237,39 @@
 
 .steps-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  gap: 10px; /* Control the gap between cards */
+  justify-content: center;
 }
 
 .step {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
   flex: 1 1 300px;
   max-width: 300px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  height: 200px;
+  height: 175px;
+  position: relative; /* Ensure absolute positioning works */
+  overflow: hidden; /* Clip any overflowing elements */
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #0077b6, #59828f);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.step:hover::before {
+  opacity: 1; /* Highlight on hover */
 }
 
 .step:hover {
@@ -214,16 +318,40 @@
   }
 }
 
+/* TOOLS AND TECHNOLOGY */
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+#tools-and-technologies {
+  background-color: #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; /* Ensure the heading is above the cards */
+  align-items: center; /* Center the content */
+  font-family: "Arial, sans-serif";
 }
 
-@keyframes slideIn {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(0); }
+.tools-heading {
+  text-align: center;
+  font-family: "Arial, sans-serif";
+  font-size: 2.5rem; /* Unified font-size */
+  color: #ffffff; /* White color for text */
+  margin: 20px 0; /* Unified margin */
+  padding: 10px 20px; /* Added padding for more definition */
+  width: 100%; /* Ensures full width */
+  display: block; /* Ensures it takes full width */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+  background: linear-gradient(to right, #0077b6, #59828f); /* Enhanced gradient background with more muted tones */
+  border-radius: 6px; /* Slightly less rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Even subtler shadow for a more professional look */
 }
+
+.tools-heading:hover {
+  color: #d1e1f1; /* Slightly lighter color on hover */
+  background-color: #005f73; /* Slightly darker background on hover */
+  transform: scale(1.03); /* Slight scaling on hover */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
 
 
 
