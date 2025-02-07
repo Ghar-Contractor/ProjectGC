@@ -31,7 +31,7 @@ function Locations() {
       city: "Pune",
       description:
         "The heart of Maharashtra, offering the best in design and construction.",
-      image: "src/assets/images/pune.jpg",
+      image: "/pune.jpg",
       population: "3.1 million",
       established: "1950",
       constructionInfo:
@@ -41,7 +41,7 @@ function Locations() {
       city: "Noida",
       description:
         "A bustling city in the NCR with limitless opportunities for modern designs.",
-      image: "src/assets/images/noida.jpg",
+      image: "/noida.jpg",
       population: "1.2 million",
       established: "1997",
       constructionInfo:
@@ -51,7 +51,7 @@ function Locations() {
       city: "Bangalore",
       description:
         "The tech capital of India, with a growing demand for innovative spaces.",
-      image: "src/assets/images/bangalore.jpg",
+      image: "/bangalore.jpg",
       population: "12.8 million",
       established: "1537",
       constructionInfo:

@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 
 function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [hoveredContact, setHoveredContact] = useState(false);
-  const [hoveredQuote, setHoveredQuote] = useState(false);
+  const [isHoveredContact, setIsHoveredContact] = useState(false);
+  const [isHoveredQuote, setIsHoveredQuote] = useState(false);
 
   const images = [
-    "https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg", // Crane & Building
-    "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?w=1600", // Under Construction Site
+    "https://cdnassets.hw.net/8b/16/ad10b7644b379890958adca8b519/construction.jpg",
+    "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?w=1600",
     "https://mir-s3-cdn-cf.behance.net/project_modules/1400/e78caf13864951.5627958ac9beb.jpg",
-    "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?w=1600", // Workers on Site
+    "https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?w=1600",
   ];
 
   useEffect(() => {
@@ -34,28 +34,17 @@ function HeroSection() {
       {/* Buttons */}
       <div style={buttonGroupStyle}>
         <button
-          style={{
-            ...contactButtonStyle,
-            background: hoveredContact
-              ? "linear-gradient(90deg, #00A8FF, #0077B5)"
-              : "linear-gradient(90deg, #00A8FF, #0052CC)",
-            transform: hoveredContact ? "scale(1.05)" : "scale(1)",
-          }}
-          onMouseEnter={() => setHoveredContact(true)}
-          onMouseLeave={() => setHoveredContact(false)}
+          style={isHoveredContact ? { ...contactButtonStyle, ...hoveredContactStyle } : contactButtonStyle}
+          onMouseEnter={() => setIsHoveredContact(true)}
+          onMouseLeave={() => setIsHoveredContact(false)}
         >
           Contact Us
         </button>
+
         <button
-          style={{
-            ...quoteButtonStyle,
-            background: hoveredQuote
-              ? "linear-gradient(90deg, #FF416C, #FF3A3A)"
-              : "linear-gradient(90deg, #FF416C, #FF4B2B)",
-            transform: hoveredQuote ? "scale(1.05)" : "scale(1)",
-          }}
-          onMouseEnter={() => setHoveredQuote(true)}
-          onMouseLeave={() => setHoveredQuote(false)}
+          style={isHoveredQuote ? { ...quoteButtonStyle, ...hoveredQuoteStyle } : quoteButtonStyle}
+          onMouseEnter={() => setIsHoveredQuote(true)}
+          onMouseLeave={() => setIsHoveredQuote(false)}
         >
           Get a Quote
         </button>
@@ -96,7 +85,7 @@ const heroHeadingStyle = {
   marginBottom: "20px",
   textShadow: "2px 2px 10px rgba(0, 0, 0, 0.3)",
   animation: "fadeIn 2s ease-out",
-  color: "black",
+  color: "#444444",
 };
 
 const heroTextStyle = {
@@ -116,30 +105,46 @@ const buttonGroupStyle = {
 
 // Contact Button Styles
 const contactButtonStyle = {
-  background: "linear-gradient(90deg, #00A8FF, #0052CC)",
+  background: "transparent",
   color: "white",
   padding: "15px 30px",
   borderRadius: "30px",
   fontSize: "1.2em",
   fontWeight: "bold",
   cursor: "pointer",
+  border: "2px solid #00A8FF",
   boxShadow: "0px 4px 15px rgba(0, 168, 255, 0.3)",
   transition: "all 0.3s ease-in-out",
   transformOrigin: "center",
 };
 
+const hoveredContactStyle = {
+  background: "rgba(0, 168, 255, 0.1)",  // Slight transparent blue on hover
+  color: "#00A8FF",
+  transform: "scale(1.05)",
+  border: "2px solid #00A8FF", // Keep the same border color
+};
+
 // Get a Quote Button Styles
 const quoteButtonStyle = {
-  background: "linear-gradient(90deg, #FF416C, #FF4B2B)",
+  background: "transparent",
   color: "white",
   padding: "15px 30px",
   borderRadius: "30px",
   fontSize: "1.2em",
   fontWeight: "bold",
   cursor: "pointer",
+  border: "2px solid #FF416C",
   boxShadow: "0px 4px 15px rgba(255, 75, 43, 0.3)",
   transition: "all 0.3s ease-in-out",
   transformOrigin: "center",
+};
+
+const hoveredQuoteStyle = {
+  background: "rgba(255, 65, 108, 0.1)",  // Slight transparent pink on hover
+  color: "#FF416C",
+  transform: "scale(1.05)",
+  border: "2px solid #FF416C", // Keep the same border color
 };
 
 export default HeroSection;

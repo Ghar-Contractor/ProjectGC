@@ -9,13 +9,13 @@ function Services() {
       title: "Interior Design",
       description:
         "Transforming spaces with innovative and personalized designs.",
-      image: "src/assets/images/sevice1.jpg",
+      image: "/sevice1.jpg",
     },
     {
       title: "Construction",
       description:
         "Building durable and sustainable structures with precision.",
-      image: "src/assets/images/construction.jpg",
+      image: "/construction.jpg",
     },
   ];
 
