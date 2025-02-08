@@ -40,28 +40,28 @@ export default function ServicesPage() {
       
 
       <section id="tools-and-technologies">
-      
-                <h3 className='tools-heading'>Tools and Technologies</h3>
-                <div className='cards-container'>
-                <Card
-                    title="Design Software"
-                    image="image5.webp"
-                    description="Using software like AutoCAD, SketchUp, and 3D Max for accurate plans."/>
-                <Card
-                    title="Sustainable Materials"
-                    image="image6.webp"
-                    description="Prioritizing eco-friendly materials and practices for sustainable designs."
-                />
-                <Card
-                    title="Smart Technology Integration"
-                    image="image7.webp"
-                    description="Incorporating smart home tech for convenience, security, and energy efficiency."/>
-                {/* <Card
-                    title="Project Management Tools"
-                    image="image8.webp"
-                    description="Using project management software to streamline communication and track progress."/> */}
-                </div>
-            </section>
+  <h3 className="tools-heading">Tools and Technologies</h3>
+  <div className="tools-list">
+    <div className="tool-item">
+      <img src="image5.webp" alt="Design Software" className="tool-icon" />
+      <h4>Design Software</h4>
+      <p>Using software like AutoCAD, SketchUp, and 3D Max for accurate plans.</p>
+    </div>
+    <div className="tool-item">
+      <img src="image6.webp" alt="Sustainable Materials" className="tool-icon" />
+      <h4>Sustainable Materials</h4>
+      <p>Prioritizing eco-friendly materials and practices for sustainable designs.</p>
+    </div>
+    <div className="tool-item">
+      <img src="image7.webp" alt="Smart Technology Integration" className="tool-icon" />
+      <h4>Smart Technology Integration</h4>
+      <p>Incorporating smart home tech for convenience, security, and energy efficiency.</p>
+    </div>
+  </div>
+</section>
+
+
+
             
   
   <section id="methodology">
@@ -118,30 +118,27 @@ export default function ServicesPage() {
 
 
 <section id="tools-and-technologies">
-  
-    <h3 className="tools-heading">Tools and Technologies</h3>
-    <div className="cards-container">
-    <Card
-      title="Construction Tools"
-      image="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg"
-      description="Hand Tools: Hammers, wrenches, screwdrivers; Power Tools: Drills, saws, nail guns; Surveying Tools: Theodolites, GPS."
-    />
-    <Card
-      title=" Advanced Construction Technologies"
-      image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPcCDK8nXI3J-gyR3s7oQcvy_kEbrMK9cfQ&s"
-      description="3D Printing, Prefab Construction, Green Building Tech, Robotics, IoT Sensors, AI, Construction Wearables."
-    />
-    <Card
-      title="Software and Digital Tools"
-      image="https://media.istockphoto.com/id/952063596/photo/business-software-concept-ai-artificial-intelligence.jpg?s=612x612&w=0&k=20&c=UNrf6L11psFEsSWLElzd3z6YuFQ6C2x3DPdZTnqYbZc="
-      description="BIM, Construction Management Software, Drones, AR/VR, Cloud Collaboration Tools."
-    />
-    {/* <Card
-      title="Sustainable Construction Technologies"
-      image="https://img.freepik.com/free-photo/view-futuristic-looking-city_23-2150946719.jpg?t=st=1737105805~exp=1737109405~hmac=98b23539d46da67747538e58fd01b867609b4b0ef45b63c353c21407320b7519&w=996"
-      description="Energy-Efficient Materials: Insulated concrete forms, low-E glass, cross-laminated timber; Waste Management: Recycling tech."/> */}
+  <h3 className="tools-heading">Tools and Technologies</h3>
+  <div className="tools-list">
+    <div className="tool-item">
+      <img src="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg" alt="Construction Tools" className="tool-icon" />
+      <h4>Construction Tools</h4>
+      <p>Hand Tools: Hammers, wrenches, screwdrivers; Power Tools: Drills, saws, nail guns; Surveying Tools: Theodolites, GPS.</p>
+    </div>
+    <div className="tool-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPcCDK8nXI3J-gyR3s7oQcvy_kEbrMK9cfQ&s" alt="Advanced Construction Technologies" className="tool-icon" />
+      <h4>Advanced Construction Technologies</h4>
+      <p>3D Printing, Prefab Construction, Green Building Tech, Robotics, IoT Sensors, AI, Construction Wearables.</p>
+    </div>
+    <div className="tool-item">
+      <img src="https://media.istockphoto.com/id/952063596/photo/business-software-concept-ai-artificial-intelligence.jpg?s=612x612&w=0&k=20&c=UNrf6L11psFEsSWLElzd3z6YuFQ6C2x3DPdZTnqYbZc=" alt="Software and Digital Tools" className="tool-icon" />
+      <h4>Software and Digital Tools</h4>
+      <p>BIM, Construction Management Software, Drones, AR/VR, Cloud Collaboration Tools.</p>
+    </div>
   </div>
 </section>
+
+
 
 
 <section id="methodology">

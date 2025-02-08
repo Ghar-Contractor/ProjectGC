@@ -322,35 +322,124 @@
 
 #tools-and-technologies {
   background-color: #ffffff;
-  padding: 15px;
+  padding: 30px 15px;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column; /* Ensure the heading is above the cards */
-  align-items: center; /* Center the content */
+  flex-direction: column;
+  align-items: center;
   font-family: "Arial, sans-serif";
+  overflow: hidden;
 }
 
 .tools-heading {
   text-align: center;
-  font-family: "Arial, sans-serif";
-  font-size: 2.5rem; /* Unified font-size */
-  color: #ffffff; /* White color for text */
-  margin: 20px 0; /* Unified margin */
-  padding: 10px 20px; /* Added padding for more definition */
-  width: 100%; /* Ensures full width */
-  display: block; /* Ensures it takes full width */
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
-  background: linear-gradient(to right, #0077b6, #59828f); /* Enhanced gradient background with more muted tones */
-  border-radius: 6px; /* Slightly less rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Even subtler shadow for a more professional look */
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 20px 0;
+  padding: 5px 5px;
+  width: 100%;
+  background: linear-gradient(to right, #0077b6, #59828f);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
 .tools-heading:hover {
-  color: #d1e1f1; /* Slightly lighter color on hover */
-  background-color: #005f73; /* Slightly darker background on hover */
-  transform: scale(1.03); /* Slight scaling on hover */
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+  color: #d1e1f1;
+  background-color: #005f73;
+  transform: scale(1.03);
 }
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool-item {
+  margin: 20px 0;
+  text-align: center;
+  padding: 15px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, opacity 0.5s ease, background-color 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards, floatEffect 2s infinite ease-in-out;
+  animation-delay: calc(var(--delay) * 0.2s);
+}
+
+.tool-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px) scale(1.02);
+  background-color: #f1f1f1;
+}
+
+.tool-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  animation: rotateEffect 10s linear infinite;
+}
+
+.tool-item h4 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #0077b6;
+  animation: fadeInText 1s ease forwards;
+}
+
+.tool-item p {
+  font-size: 1rem;
+  color: #333;
+  animation: fadeInText 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes rotateEffect {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
