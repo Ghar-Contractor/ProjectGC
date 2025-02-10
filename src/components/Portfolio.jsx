@@ -90,7 +90,7 @@ export default function FeaturedProjects() {
 
   return (
     <div className="featured-projects-container">
-      <h1 className="title">Featured Projects</h1>
+      <h1 className="TITLE1">Featured Projects</h1>
 
       <div className="projects">
         {projects.map((project, index) => (

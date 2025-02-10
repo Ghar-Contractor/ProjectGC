@@ -1,54 +1,79 @@
+/* Reset margins and paddings for common elements */
+body, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add padding to the top of the services page to prevent overlapping with the navbar */
+.services-page {
+  background-color: #ffffff;
+  margin: 0;
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+  font-family: "Arial", sans-serif;
+  padding-bottom: 20px;
+}
 
 
 .cards-container {
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    background: transparent;
-    font-family:"Arial sans-serif";
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: transparent;
+  font-family: "Arial", sans-serif;
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px;
   }
-  
-  .services-page{
-    background-color:#ffffff;
-    
-    padding: 2%; font-family: "Arial", sans-serif; }
 
-    @media (max-width: 480px) {
-      .footer-container {
-        padding: 10px;
-      }
-
-      .footer-heading {
-        font-size: 0.8rem;
-      }
-
-      .footer-link {
-        font-size: 0.7rem;
-      }
-
-      .footer-bottom {
-        font-size: 0.7rem;
-      }
-    }
-    
-    .footer-container{
-      padding: 50px;
-      
-    }
-
-    .Head1 {
-      text-align: center;
-      margin-top: 20px;
-      font-family: "Arial, sans-serif";
-      color: #ffffff;
-      background: linear-gradient(to right, #EF4136, #FBB040);
-      padding: 20px 40px;
-      border-radius: 8px;
-      display: block;
-      box-shadow: none;
-      font-size: 3rem;
+  .footer-heading {
+    font-size: 0.8rem;
   }
-    
-  
-  
-  
+
+  .footer-link {
+    font-size: 0.7rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F8F8F8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 50px;
+  box-sizing: border-box; /* Ensures proper padding and width calculation */
+}
+
+/* Ensure that .navbar items are spaced evenly */
+.navbar a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Adjust font-size for smaller screens */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 0.8rem; /* Adjust size if needed */
+  }
+}
+
+/* For visibility of the services menu */
+.navbar .menu {
+  flex-wrap: wrap;
+}

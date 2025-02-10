@@ -219,12 +219,33 @@
 }
 
 #methodology {
-  background-color: #f0f0f0;
+  background-color: #e0e0e0; /* Light grey for methodology */
   padding: 40px 20px;
   border-radius: 10px;
   text-align: center;
   height: auto;
+  margin: 40px; /* Uniform margin on all sides */
+  padding-bottom: 80px; /* Add bottom padding to ensure space */
+  border: white;
+  box-sizing: border-box; /* Ensure proper padding and width calculation */
 }
+
+.footer-container {
+  background-color: #F8F8F8 !important; /* Revert to the previous background color */
+  padding: 50px !important; /* Add padding to the footer */
+  margin-top: 20px !important; /* Ensure there's margin above the footer with !important */
+  text-align: center !important;
+  position: relative !important; /* Ensure the footer is positioned correctly */
+  z-index: 1 !important; /* Ensure the footer appears above the background */
+  padding-top: 60px !important; /* Add top padding to create space above the footer */
+  box-sizing: border-box !important; /* Ensure proper padding and width calculation */
+}
+
+
+
+
+
+
 
 .methodology-heading {
   font-size: 2.5em;
@@ -240,6 +261,7 @@
   flex-wrap: wrap;
   gap: 10px; /* Control the gap between cards */
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .step {
