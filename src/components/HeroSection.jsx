@@ -77,6 +77,7 @@ const sliderContainerStyle = {
   backgroundPosition: "center",
   zIndex: -1,
   transition: "background-image 1s ease-in-out",
+  
 };
 
 const heroHeadingStyle = {

@@ -1,0 +1,118 @@
+/* Testimonial Container */
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55vh;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  margin: auto;
+  max-width: 750px;
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 60px;
+}
+
+/* Testimonial Box */
+.testimonial {
+  background: linear-gradient(135deg, #ffefba, #ffffff);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  width: 600px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards, pulse 3s infinite;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  border: 3px solid #ff9a8b;
+  flex-shrink: 0;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Content */
+.testimonial-content {
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  font-size: 60px;
+  color: #ff7e5f;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 0.2px;
+  text-align: left;
+}
+
+.description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 1px;
+  font-style: italic;
+}
+
+.testimonials-heading {
+  color: #4b5563;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.post {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
