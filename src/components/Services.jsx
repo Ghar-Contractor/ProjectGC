@@ -42,18 +42,21 @@ export default function ServicesPage() {
       <section id="tools-and-technologies">
   <h3 className="tools-heading">Tools and Technologies</h3>
   <div className="tools-list">
-    <div className="tool-item">
-      <img src="image5.webp" alt="Design Software" className="tool-icon" />
+    <div className="tool-item" >
+      {/* <img src="image5.webp" alt="Design Software" className="tool-icon" /> */}
+      <i className="fa-solid fa-paintbrush fa-2x tool-icon"></i>
       <h4>Design Software</h4>
       <p>Using software like AutoCAD, SketchUp, and 3D Max for accurate plans.</p>
     </div>
     <div className="tool-item">
-      <img src="image6.webp" alt="Sustainable Materials" className="tool-icon" />
+      {/* <img src="image6.webp" alt="Sustainable Materials" className="tool-icon" /> */}
+      <i className="fa-solid fa-leaf fa-2x tool-icon"></i>
       <h4>Sustainable Materials</h4>
       <p>Prioritizing eco-friendly materials and practices for sustainable designs.</p>
     </div>
     <div className="tool-item">
-      <img src="image7.webp" alt="Smart Technology Integration" className="tool-icon" />
+      {/* <img src="image7.webp" alt="Smart Technology Integration" className="tool-icon" /> */}
+      <i className="fa-solid fa-microchip fa-2x tool-icon"   ></i>
       <h4>Smart Technology Integration</h4>
       <p>Incorporating smart home tech for convenience, security, and energy efficiency.</p>
     </div>
@@ -67,15 +70,15 @@ export default function ServicesPage() {
   <section id="methodology">
     <h3 className="methodology-heading">Our Methodology</h3>
     <div className="steps-container">
-        <div class="step">
+        <div className="step">
             <h4>Consultation</h4>
             <p>Consult to understand your vision, preferences, and requirements.</p>
         </div>
-        <div class="step">
+        <div className="step">
             <h4>Concept Development</h4>
             <p>Designers create concepts for your feedback and approval.</p>
         </div>
-        <div class="step">
+        <div className="step">
             <h4>Design Development</h4>
             <p>We refine the design based on your input, selecting materials, colors, and finishes.</p>
         </div>
@@ -121,17 +124,20 @@ export default function ServicesPage() {
   <h3 className="tools-heading">Tools and Technologies</h3>
   <div className="tools-list">
     <div className="tool-item">
-      <img src="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg" alt="Construction Tools" className="tool-icon" />
+      {/* <img src="https://thumbs.dreamstime.com/b/vector-construction-tools-helmet-white-background-59750949.jpg" alt="Construction Tools" className="tool-icon" /> */}
+      <i className="fa-solid fa-hammer fa-2x tool-icon"></i>
       <h4>Construction Tools</h4>
       <p>Hand Tools: Hammers, wrenches, screwdrivers; Power Tools: Drills, saws, nail guns; Surveying Tools: Theodolites, GPS.</p>
     </div>
     <div className="tool-item">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPcCDK8nXI3J-gyR3s7oQcvy_kEbrMK9cfQ&s" alt="Advanced Construction Technologies" className="tool-icon" />
+      {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlPcCDK8nXI3J-gyR3s7oQcvy_kEbrMK9cfQ&s" alt="Advanced Construction Technologies" className="tool-icon" /> */}
+      <i className="fa-solid fa-helmet-safety fa-2x tool-icon"></i>
       <h4>Advanced Construction Technologies</h4>
       <p>3D Printing, Prefab Construction, Green Building Tech, Robotics, IoT Sensors, AI, Construction Wearables.</p>
     </div>
     <div className="tool-item">
-      <img src="https://media.istockphoto.com/id/952063596/photo/business-software-concept-ai-artificial-intelligence.jpg?s=612x612&w=0&k=20&c=UNrf6L11psFEsSWLElzd3z6YuFQ6C2x3DPdZTnqYbZc=" alt="Software and Digital Tools" className="tool-icon" />
+      {/* <img src="https://media.istockphoto.com/id/952063596/photo/business-software-concept-ai-artificial-intelligence.jpg?s=612x612&w=0&k=20&c=UNrf6L11psFEsSWLElzd3z6YuFQ6C2x3DPdZTnqYbZc=" alt="Software and Digital Tools" className="tool-icon" /> */}
+      <i className="fa-solid fa-laptop fa-2x tool-icon "></i>
       <h4>Software and Digital Tools</h4>
       <p>BIM, Construction Management Software, Drones, AR/VR, Cloud Collaboration Tools.</p>
     </div>
@@ -143,20 +149,20 @@ export default function ServicesPage() {
 
 <section id="methodology">
   <h3 className="methodology-heading">Our Methodology</h3>
-  <div class="steps-container">
-    <div class="step">
+  <div className="steps-container">
+    <div className="step">
       <h4>Traditional Construction</h4>
       <p>Design creation and approval, followed by construction.</p>
     </div>
-    <div class="step">
+    <div className="step">
       <h4>Design-Build</h4>
       <p>Client hires design-build contractor; design and construction executed in parallel.</p>
     </div>
-    <div class="step">
+    <div className="step">
       <h4>Construction Management at Risk</h4>
       <p>The construction manager works with designers during the planning phase.</p>
     </div>
-    {/* <div class="step">
+    {/* <div className="step">
       <h4>Integrated Project Delivery</h4>
       <p>Share risks and rewards among stakeholders.</p>
     </div> */}

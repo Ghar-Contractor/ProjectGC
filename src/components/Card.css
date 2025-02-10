@@ -366,6 +366,7 @@
   transform: translateY(20px);
   animation: fadeInUp 0.5s ease forwards, floatEffect 2s infinite ease-in-out;
   animation-delay: calc(var(--delay) * 0.2s);
+  width: 80%;
 }
 
 .tool-item:hover {
@@ -378,8 +379,13 @@
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
-  animation: rotateEffect 10s linear infinite;
+  animation: rotateEffect 4s linear infinite;
 }
+
+
+
+
+
 
 .tool-item h4 {
   margin: 10px 0;
