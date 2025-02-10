@@ -14,9 +14,9 @@ export default function Navbar() {
             align-items: center;
             padding: 10px 20px;
             background-color: #F8F8F8;
-            //position: sticky;
-            position: fixed;
-            width:98%;
+            position: sticky;
+            //position: fixed;
+            //width:98%;
             top: 0;
             z-index: 1000;
             height: 50px;
