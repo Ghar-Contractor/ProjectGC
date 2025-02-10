@@ -35,8 +35,19 @@
       padding: 50px;
       
     }
-    
-  
+
+    .Head1 {
+      text-align: center;
+      margin-top: 20px;
+      font-family: "Arial, sans-serif";
+      color: #ffffff;
+      background: linear-gradient(to right, #EF4136, #FBB040);
+      padding: 20px 40px;
+      border-radius: 8px;
+      display: block;
+      box-shadow: none;
+      font-size: 3rem;
+  }
     
   
   
