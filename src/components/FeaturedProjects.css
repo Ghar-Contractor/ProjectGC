@@ -8,7 +8,7 @@
     background-color: #ffffff;
   }
   
-  .title {
+  .TITLE1 {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 30px;
@@ -17,24 +17,39 @@
     letter-spacing: 1.5px;
   }
   
-  .projects {
+  .projects, .completed-projects {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
   }
   
-  .project-card {
+  .project-card, .completed-project-card {
     background: #F3F4F6;
     border: none;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    width: 320px;
+    width: 320px; /* Keep the card size unchanged */
     text-align: center;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
     border: 2px solid #c5c7ca;
+    margin: 10px; /* Use margins to control spacing */
   }
+  
+  /* Media query to ensure responsive design */
+  @media (max-width: 992px) {
+    .project-card, .completed-project-card {
+      width: 45%; /* Adjust width for two cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-card, .completed-project-card {
+      width: 100%; /* Adjust width for one card per row on small screens */
+    }
+  }
+  
   
   .project-card:hover {
     transform: translateY(-10px);
@@ -137,3 +152,21 @@
     font-size: 0.9rem;
     color: #888;
   }
+
+  
+  /* Main content on the portfolio page */
+.featured-projects-container {
+  font-family: 'Poppins', sans-serif;
+  padding: 90px 20px 20px; /* Added top padding to prevent overlapping */
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.testimonial-image {
+  max-width: 100%;
+  border-radius: 12px;
+  height: auto; /* Ensures the image scales proportionally */
+  margin-bottom: 15px;
+}
+
+  

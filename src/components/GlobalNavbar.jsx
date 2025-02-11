@@ -8,27 +8,35 @@ export default function Navbar() {
     <div>
       <style>
         {`
-          .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #F8F8F8;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            height: 50px;
-          }
-          .navbar .logo a {
-            color: red;
-            text-decoration: none;
-            font-size: 24px;
-            font-weight: bold;
-          }
-          .navbar .logo .img {
-            height: 70px;
-            width: 100px;
-          }
+          /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F8F8F8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 70px; /* Adjusted to match the logo height */
+  box-sizing: border-box;
+}
+
+/* Navbar Logo */
+.navbar .logo a {
+  color: red;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .logo .img {
+  height: 50px; /* Ensure this height matches the navbar's height */
+  max-height: 70px; /* Ensures the image doesn't exceed the navbar's height */
+  width: auto; /* Maintain aspect ratio */
+}
+
           .hamburger {
             display: none;
             flex-direction: column;
