@@ -71,13 +71,13 @@ const sliderContainerStyle = {
   position: "absolute",
   top: 0,
   left: 0,
-  width: "100%",
+  width: "1400px",
   height: "100%",
   backgroundSize: "cover",
   backgroundPosition: "center",
   zIndex: -1,
   transition: "background-image 1s ease-in-out",
-  
+  margin: "0px 50px"
 };
 
 const heroHeadingStyle = {
